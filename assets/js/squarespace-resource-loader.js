@@ -1,5 +1,5 @@
 (function () {
-  var LOADER_VERSION = '2026-05-27-education-alias';
+  var LOADER_VERSION = '2026-05-27-education-refresh';
   if (window.brqSquarespaceResourceLoaderVersion === LOADER_VERSION) return;
   window.brqSquarespaceResourceLoaderVersion = LOADER_VERSION;
   window.brqSquarespaceResourceLoaderActive = true;
@@ -236,7 +236,7 @@
     var script = document.createElement('script');
     script.id = 'brq-education-quiz-script';
     script.setAttribute('data-brq-version', LOADER_VERSION);
-    script.src = SOURCE_ORIGIN + '/assets/js/education-quiz.js';
+    script.src = SOURCE_ORIGIN + '/assets/js/education-quiz.js?v=' + encodeURIComponent(LOADER_VERSION);
     script.defer = true;
     document.body.appendChild(script);
   }
@@ -264,7 +264,7 @@
 
   function load() {
     showStatus('Loading Georgia real estate resource...');
-    fetch(SOURCE_ORIGIN + sourcePath, { credentials: 'omit', cache: 'force-cache' })
+    fetch(SOURCE_ORIGIN + sourcePath + '?v=' + encodeURIComponent(LOADER_VERSION), { credentials: 'omit', cache: 'force-cache' })
       .then(function (response) {
         if (!response.ok) throw new Error('Source returned ' + response.status);
         return response.text();
