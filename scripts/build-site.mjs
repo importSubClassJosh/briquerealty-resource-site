@@ -787,7 +787,8 @@ function educationSchema() {
       "@type": "Offer",
       price: "19.00",
       priceCurrency: "USD",
-      availability: "https://schema.org/PreOrder"
+      availability: "https://schema.org/InStock",
+      url: `${siteUrl}/education/`
     }
   });
 }
