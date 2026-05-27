@@ -1,5 +1,5 @@
 (function () {
-  var LOADER_VERSION = '2026-05-27-education-access';
+  var LOADER_VERSION = '2026-05-27-education-stock';
   if (window.brqSquarespaceResourceLoaderVersion === LOADER_VERSION) return;
   window.brqSquarespaceResourceLoaderVersion = LOADER_VERSION;
   window.brqSquarespaceResourceLoaderActive = true;
