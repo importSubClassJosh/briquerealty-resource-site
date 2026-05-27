@@ -126,11 +126,117 @@
     </item>
 
     <item>
+      <title><![CDATA[Real Estate License Exam Prep]]></title>
+      <link>https://www.briquerealty.com/education/</link>
+      <pubDate>Fri, 22 May 2026 12:00:00 GMT</pubDate>
+      <dc:creator><![CDATA[agent-resource-desk]]></dc:creator>
+      <guid isPermaLink="false">https://www.briquerealty.com/education/?import_id=1001</guid>
+      <description><![CDATA[National real estate license exam prep with free section practice, answer explanations, memory tricks, and a $19 full exam prep unlock.]]></description>
+      <content:encoded><![CDATA[<section class="hero">
+    <div class="hero-copy">
+      <p class="eyebrow">National real estate exam prep</p>
+      <h1>Real Estate License Exam Prep</h1>
+      <p>Practice national real estate salesperson exam topics by section for free, then unlock mixed practice, timed mock exams, saved progress, missed-question review, and full mnemonic cram sheets for $19.</p>
+      <div class="actions"><a class="button " href="#practice">Start Free Practice</a><a class="button secondary" href="#full-exam-prep">Unlock Full Prep - $19</a></div>
+    </div>
+    <figure class="hero-image">
+    <img src="https://raw.githubusercontent.com/importSubClassJosh/briquerealty-resource-site/main/assets/images/resource-center-banner.png" alt="A refined resource library scene with categorized folders, contracts, laptop, and Georgia property silhouettes." loading="eager">
+    <figcaption>A refined resource library scene with categorized folders, contracts, laptop, and Georgia property silhouettes.</figcaption>
+  </figure>
+  </section>
+  <section class="education-intro content-band" aria-label="Exam prep overview">
+    <div class="education-intro-grid">
+      <article>
+        <p class="eyebrow">Free by section</p>
+        <h2>Choose exactly what you want to drill.</h2>
+        <p>Each national topic section includes 25 free original exam-style questions with answer feedback, plain-English explanations, and memory tricks. Mixed practice and timed exams are locked because that is the closest simulation of the real test.</p>
+      </article>
+      <article>
+        <p class="eyebrow">AdSense-ready layout</p>
+        <h2>Useful public content first.</h2>
+        <p>Public study notes, section explanations, and reserved ad placements sit away from quiz buttons and account/payment prompts. The paid tier stays simple: one $19 unlock for the serious prep tools.</p>
+      </article>
+    </div>
+    <aside class="ad-slot" aria-label="Reserved advertising placement">
+      <span>AdSense placement reserved</span>
+      <small>Ads should appear between study blocks, not inside answer choices or checkout prompts.</small>
+    </aside>
+  </section>
+  <section id="practice" class="education-shell" data-education-app>
+    <noscript>
+      <div class="education-panel">
+        <h2>JavaScript is required for interactive practice.</h2>
+        <p>Enable JavaScript to choose sections, answer questions, and see explanations.</p>
+      </div>
+    </noscript>
+  </section>
+  <section id="full-exam-prep" class="content-band tinted">
+    <div class="section-heading">
+      <p class="eyebrow">Simple pricing</p>
+      <h2>Free Sections First. Full Prep When You Are Ready.</h2>
+    </div>
+    <div class="pricing-grid">
+      <article class="pricing-card">
+        <p class="eyebrow">Free</p>
+        <h3>Section Practice</h3>
+        <p class="price">$0</p>
+        <ul>
+          <li>25 questions in every national topic section</li>
+          <li>Correct-answer explanations</li>
+          <li>Wrong-answer feedback</li>
+          <li>Selected memory tricks while practicing</li>
+        </ul>
+      </article>
+      <article class="pricing-card featured">
+        <p class="eyebrow">One-time unlock</p>
+        <h3>Full Exam Prep</h3>
+        <p class="price">$19</p>
+        <ul>
+          <li>Mixed practice across all sections</li>
+          <li>Timed mock exam mode</li>
+          <li>Account-based progress saving</li>
+          <li>Missed-question review</li>
+          <li>Weak-area dashboard</li>
+          <li>Full mnemonic cram sheet</li>
+        </ul>
+        <a class="button" href="#practice">Unlock Full Exam Prep - $19</a>
+      </article>
+    </div>
+  </section>
+  <section class="content-band">
+    <div class="education-note">
+      <p class="eyebrow">Current outline alignment</p>
+      <h2>Built Around Published National Exam Topics</h2>
+      <p>This prep page uses original questions written to match national real estate salesperson exam topics and common multiple-choice patterns. It does not claim to contain actual protected exam questions, and candidates should verify the latest candidate bulletin for their state before scheduling an exam.</p>
+      <p>Reference: <a href="https://test-takers.psiexams.com/api/content/bulletin/1001" rel="nofollow">PSI Candidate Information Bulletin</a>.</p>
+    </div>
+    <aside class="disclaimer-block">
+    <strong>Educational disclaimer</strong>
+    <p>Content on this site is for general educational purposes only and is not legal, tax, financial, lending, or brokerage advice. Real estate rules, contracts, commissions, lending standards, and local practices may change. Readers should consult the appropriate licensed professional, broker, attorney, lender, tax professional, or local authority before making decisions.</p>
+  </aside>
+  </section>]]></content:encoded>
+      <excerpt:encoded><![CDATA[National real estate license exam prep with free section practice, answer explanations, memory tricks, and a $19 full exam prep unlock.]]></excerpt:encoded>
+      
+      <wp:post_id>1001</wp:post_id>
+      <wp:post_date>2026-05-22 12:00:00</wp:post_date>
+      <wp:post_date_gmt>2026-05-22 12:00:00</wp:post_date_gmt>
+      <wp:comment_status>closed</wp:comment_status>
+      <wp:ping_status>closed</wp:ping_status>
+      <wp:post_name>education</wp:post_name>
+      <wp:status>publish</wp:status>
+      <wp:post_parent>0</wp:post_parent>
+      <wp:menu_order>0</wp:menu_order>
+      <wp:post_type>page</wp:post_type>
+      <wp:post_password></wp:post_password>
+      <wp:is_sticky>0</wp:is_sticky>
+    </item>
+
+    <item>
       <title><![CDATA[Guides, Checklists, and Category Hubs for Practical Real Estate Learning]]></title>
       <link>https://www.briquerealty.com/resource-center/</link>
       <pubDate>Fri, 22 May 2026 12:00:00 GMT</pubDate>
       <dc:creator><![CDATA[agent-resource-desk]]></dc:creator>
-      <guid isPermaLink="false">https://www.briquerealty.com/resource-center/?import_id=1001</guid>
+      <guid isPermaLink="false">https://www.briquerealty.com/resource-center/?import_id=1002</guid>
       <description><![CDATA[Main resource hub for Georgia real estate agents, investors, buyers, sellers, and property professionals.]]></description>
       <content:encoded><![CDATA[<section class="hero">
     <div class="hero-copy">
@@ -225,7 +331,7 @@
   </aside></section>]]></content:encoded>
       <excerpt:encoded><![CDATA[Main resource hub for Georgia real estate agents, investors, buyers, sellers, and property professionals.]]></excerpt:encoded>
       
-      <wp:post_id>1001</wp:post_id>
+      <wp:post_id>1002</wp:post_id>
       <wp:post_date>2026-05-22 12:00:00</wp:post_date>
       <wp:post_date_gmt>2026-05-22 12:00:00</wp:post_date_gmt>
       <wp:comment_status>closed</wp:comment_status>
@@ -244,7 +350,7 @@
       <link>https://www.briquerealty.com/articles/</link>
       <pubDate>Fri, 22 May 2026 12:00:00 GMT</pubDate>
       <dc:creator><![CDATA[agent-resource-desk]]></dc:creator>
-      <guid isPermaLink="false">https://www.briquerealty.com/articles/?import_id=1002</guid>
+      <guid isPermaLink="false">https://www.briquerealty.com/articles/?import_id=1003</guid>
       <description><![CDATA[All Georgia real estate education articles from The Agent Resource Desk.]]></description>
       <content:encoded><![CDATA[<section class="hero">
     <div class="hero-copy">
@@ -372,7 +478,7 @@
   </aside></section>]]></content:encoded>
       <excerpt:encoded><![CDATA[All Georgia real estate education articles from The Agent Resource Desk.]]></excerpt:encoded>
       
-      <wp:post_id>1002</wp:post_id>
+      <wp:post_id>1003</wp:post_id>
       <wp:post_date>2026-05-22 12:00:00</wp:post_date>
       <wp:post_date_gmt>2026-05-22 12:00:00</wp:post_date_gmt>
       <wp:comment_status>closed</wp:comment_status>
@@ -391,7 +497,7 @@
       <link>https://www.briquerealty.com/downloads/</link>
       <pubDate>Fri, 22 May 2026 12:00:00 GMT</pubDate>
       <dc:creator><![CDATA[agent-resource-desk]]></dc:creator>
-      <guid isPermaLink="false">https://www.briquerealty.com/downloads/?import_id=1003</guid>
+      <guid isPermaLink="false">https://www.briquerealty.com/downloads/?import_id=1004</guid>
       <description><![CDATA[Printable real estate checklists and worksheets for Georgia agents and property professionals.]]></description>
       <content:encoded><![CDATA[<section class="hero">
     <div class="hero-copy">
@@ -454,7 +560,7 @@
   </aside></section>]]></content:encoded>
       <excerpt:encoded><![CDATA[Printable real estate checklists and worksheets for Georgia agents and property professionals.]]></excerpt:encoded>
       
-      <wp:post_id>1003</wp:post_id>
+      <wp:post_id>1004</wp:post_id>
       <wp:post_date>2026-05-22 12:00:00</wp:post_date>
       <wp:post_date_gmt>2026-05-22 12:00:00</wp:post_date_gmt>
       <wp:comment_status>closed</wp:comment_status>
@@ -473,7 +579,7 @@
       <link>https://www.briquerealty.com/about/</link>
       <pubDate>Fri, 22 May 2026 12:00:00 GMT</pubDate>
       <dc:creator><![CDATA[agent-resource-desk]]></dc:creator>
-      <guid isPermaLink="false">https://www.briquerealty.com/about/?import_id=1004</guid>
+      <guid isPermaLink="false">https://www.briquerealty.com/about/?import_id=1005</guid>
       <description><![CDATA[Learn about the mission behind this Georgia real estate education resource hub.]]></description>
       <content:encoded><![CDATA[<section class="hero">
     <div class="hero-copy">
@@ -514,7 +620,7 @@
   </section>]]></content:encoded>
       <excerpt:encoded><![CDATA[Learn about the mission behind this Georgia real estate education resource hub.]]></excerpt:encoded>
       
-      <wp:post_id>1004</wp:post_id>
+      <wp:post_id>1005</wp:post_id>
       <wp:post_date>2026-05-22 12:00:00</wp:post_date>
       <wp:post_date_gmt>2026-05-22 12:00:00</wp:post_date_gmt>
       <wp:comment_status>closed</wp:comment_status>
@@ -533,7 +639,7 @@
       <link>https://www.briquerealty.com/contact/</link>
       <pubDate>Fri, 22 May 2026 12:00:00 GMT</pubDate>
       <dc:creator><![CDATA[agent-resource-desk]]></dc:creator>
-      <guid isPermaLink="false">https://www.briquerealty.com/contact/?import_id=1005</guid>
+      <guid isPermaLink="false">https://www.briquerealty.com/contact/?import_id=1006</guid>
       <description><![CDATA[Contact the Georgia real estate education site for general inquiries, corrections, privacy questions, and resource suggestions.]]></description>
       <content:encoded><![CDATA[<section class="hero">
     <div class="hero-copy">
@@ -565,7 +671,7 @@
   </section>]]></content:encoded>
       <excerpt:encoded><![CDATA[Contact the Georgia real estate education site for general inquiries, corrections, privacy questions, and resource suggestions.]]></excerpt:encoded>
       
-      <wp:post_id>1005</wp:post_id>
+      <wp:post_id>1006</wp:post_id>
       <wp:post_date>2026-05-22 12:00:00</wp:post_date>
       <wp:post_date_gmt>2026-05-22 12:00:00</wp:post_date_gmt>
       <wp:comment_status>closed</wp:comment_status>
@@ -584,7 +690,7 @@
       <link>https://www.briquerealty.com/privacy-policy/</link>
       <pubDate>Fri, 22 May 2026 12:00:00 GMT</pubDate>
       <dc:creator><![CDATA[agent-resource-desk]]></dc:creator>
-      <guid isPermaLink="false">https://www.briquerealty.com/privacy-policy/?import_id=1006</guid>
+      <guid isPermaLink="false">https://www.briquerealty.com/privacy-policy/?import_id=1007</guid>
       <description><![CDATA[Privacy policy covering cookies, Google AdSense, third-party advertising, contact forms, analytics, and privacy questions.]]></description>
       <content:encoded><![CDATA[<section class="hero">
     <div class="hero-copy">
@@ -616,7 +722,7 @@
   </section>]]></content:encoded>
       <excerpt:encoded><![CDATA[Privacy policy covering cookies, Google AdSense, third-party advertising, contact forms, analytics, and privacy questions.]]></excerpt:encoded>
       
-      <wp:post_id>1006</wp:post_id>
+      <wp:post_id>1007</wp:post_id>
       <wp:post_date>2026-05-22 12:00:00</wp:post_date>
       <wp:post_date_gmt>2026-05-22 12:00:00</wp:post_date_gmt>
       <wp:comment_status>closed</wp:comment_status>
@@ -635,7 +741,7 @@
       <link>https://www.briquerealty.com/editorial-policy/</link>
       <pubDate>Fri, 22 May 2026 12:00:00 GMT</pubDate>
       <dc:creator><![CDATA[agent-resource-desk]]></dc:creator>
-      <guid isPermaLink="false">https://www.briquerealty.com/editorial-policy/?import_id=1007</guid>
+      <guid isPermaLink="false">https://www.briquerealty.com/editorial-policy/?import_id=1008</guid>
       <description><![CDATA[Editorial policy for The Agent Resource Desk, including review standards, corrections, AI-assisted content, and disclaimers.]]></description>
       <content:encoded><![CDATA[<section class="hero">
     <div class="hero-copy">
@@ -665,7 +771,7 @@
   </section>]]></content:encoded>
       <excerpt:encoded><![CDATA[Editorial policy for The Agent Resource Desk, including review standards, corrections, AI-assisted content, and disclaimers.]]></excerpt:encoded>
       
-      <wp:post_id>1007</wp:post_id>
+      <wp:post_id>1008</wp:post_id>
       <wp:post_date>2026-05-22 12:00:00</wp:post_date>
       <wp:post_date_gmt>2026-05-22 12:00:00</wp:post_date_gmt>
       <wp:comment_status>closed</wp:comment_status>
@@ -684,7 +790,7 @@
       <link>https://www.briquerealty.com/real-estate-disclaimer/</link>
       <pubDate>Fri, 22 May 2026 12:00:00 GMT</pubDate>
       <dc:creator><![CDATA[agent-resource-desk]]></dc:creator>
-      <guid isPermaLink="false">https://www.briquerealty.com/real-estate-disclaimer/?import_id=1008</guid>
+      <guid isPermaLink="false">https://www.briquerealty.com/real-estate-disclaimer/?import_id=1009</guid>
       <description><![CDATA[Educational, professional advice, fair housing, brokerage disclosure, and accuracy disclaimers for this real estate resource site.]]></description>
       <content:encoded><![CDATA[<section class="hero">
     <div class="hero-copy">
@@ -714,7 +820,7 @@
   </section>]]></content:encoded>
       <excerpt:encoded><![CDATA[Educational, professional advice, fair housing, brokerage disclosure, and accuracy disclaimers for this real estate resource site.]]></excerpt:encoded>
       
-      <wp:post_id>1008</wp:post_id>
+      <wp:post_id>1009</wp:post_id>
       <wp:post_date>2026-05-22 12:00:00</wp:post_date>
       <wp:post_date_gmt>2026-05-22 12:00:00</wp:post_date_gmt>
       <wp:comment_status>closed</wp:comment_status>
@@ -733,7 +839,7 @@
       <link>https://www.briquerealty.com/author/the-agent-resource-desk/</link>
       <pubDate>Fri, 22 May 2026 12:00:00 GMT</pubDate>
       <dc:creator><![CDATA[agent-resource-desk]]></dc:creator>
-      <guid isPermaLink="false">https://www.briquerealty.com/author/the-agent-resource-desk/?import_id=1009</guid>
+      <guid isPermaLink="false">https://www.briquerealty.com/author/the-agent-resource-desk/?import_id=1010</guid>
       <description><![CDATA[The Agent Resource Desk publishes practical guides, checklists, and educational resources for Georgia real estate agents, investors, and property professionals. Content is reviewed for clarity, usefulness, and compliance-minded presentation before publication.]]></description>
       <content:encoded><![CDATA[<section class="hero">
     <div class="hero-copy">
@@ -853,7 +959,7 @@
   </section>]]></content:encoded>
       <excerpt:encoded><![CDATA[The Agent Resource Desk publishes practical guides, checklists, and educational resources for Georgia real estate agents, investors, and property professionals. Content is reviewed for clarity, usefulness, and compliance-minded presentation before publication.]]></excerpt:encoded>
       
-      <wp:post_id>1009</wp:post_id>
+      <wp:post_id>1010</wp:post_id>
       <wp:post_date>2026-05-22 12:00:00</wp:post_date>
       <wp:post_date_gmt>2026-05-22 12:00:00</wp:post_date_gmt>
       <wp:comment_status>closed</wp:comment_status>
@@ -872,7 +978,7 @@
       <link>https://www.briquerealty.com/downloads/georgia-agent-first-client-checklist/</link>
       <pubDate>Fri, 22 May 2026 12:00:00 GMT</pubDate>
       <dc:creator><![CDATA[agent-resource-desk]]></dc:creator>
-      <guid isPermaLink="false">https://www.briquerealty.com/downloads/georgia-agent-first-client-checklist/?import_id=1010</guid>
+      <guid isPermaLink="false">https://www.briquerealty.com/downloads/georgia-agent-first-client-checklist/?import_id=1011</guid>
       <description><![CDATA[A printable readiness checklist for new Georgia agents before the first serious client conversation.]]></description>
       <content:encoded><![CDATA[<nav class="breadcrumbs" aria-label="Breadcrumb"><a href="https://www.briquerealty.com/">Home</a><span>/</span><a href="https://www.briquerealty.com/downloads/">Downloads</a><span>/</span><span>Georgia Agent First-Client Checklist</span></nav>
   <article class="article printable">
@@ -916,7 +1022,7 @@
   </article>]]></content:encoded>
       <excerpt:encoded><![CDATA[A printable readiness checklist for new Georgia agents before the first serious client conversation.]]></excerpt:encoded>
       
-      <wp:post_id>1010</wp:post_id>
+      <wp:post_id>1011</wp:post_id>
       <wp:post_date>2026-05-22 12:00:00</wp:post_date>
       <wp:post_date_gmt>2026-05-22 12:00:00</wp:post_date_gmt>
       <wp:comment_status>closed</wp:comment_status>
@@ -935,7 +1041,7 @@
       <link>https://www.briquerealty.com/downloads/listing-prep-checklist/</link>
       <pubDate>Fri, 22 May 2026 12:00:00 GMT</pubDate>
       <dc:creator><![CDATA[agent-resource-desk]]></dc:creator>
-      <guid isPermaLink="false">https://www.briquerealty.com/downloads/listing-prep-checklist/?import_id=1011</guid>
+      <guid isPermaLink="false">https://www.briquerealty.com/downloads/listing-prep-checklist/?import_id=1012</guid>
       <description><![CDATA[A printable seller and listing launch preparation checklist.]]></description>
       <content:encoded><![CDATA[<nav class="breadcrumbs" aria-label="Breadcrumb"><a href="https://www.briquerealty.com/">Home</a><span>/</span><a href="https://www.briquerealty.com/downloads/">Downloads</a><span>/</span><span>Listing Prep Checklist</span></nav>
   <article class="article printable">
@@ -979,7 +1085,7 @@
   </article>]]></content:encoded>
       <excerpt:encoded><![CDATA[A printable seller and listing launch preparation checklist.]]></excerpt:encoded>
       
-      <wp:post_id>1011</wp:post_id>
+      <wp:post_id>1012</wp:post_id>
       <wp:post_date>2026-05-22 12:00:00</wp:post_date>
       <wp:post_date_gmt>2026-05-22 12:00:00</wp:post_date_gmt>
       <wp:comment_status>closed</wp:comment_status>
@@ -998,7 +1104,7 @@
       <link>https://www.briquerealty.com/downloads/buyer-agent-transaction-checklist/</link>
       <pubDate>Fri, 22 May 2026 12:00:00 GMT</pubDate>
       <dc:creator><![CDATA[agent-resource-desk]]></dc:creator>
-      <guid isPermaLink="false">https://www.briquerealty.com/downloads/buyer-agent-transaction-checklist/?import_id=1012</guid>
+      <guid isPermaLink="false">https://www.briquerealty.com/downloads/buyer-agent-transaction-checklist/?import_id=1013</guid>
       <description><![CDATA[A printable buyer-side transaction workflow from intake through closing.]]></description>
       <content:encoded><![CDATA[<nav class="breadcrumbs" aria-label="Breadcrumb"><a href="https://www.briquerealty.com/">Home</a><span>/</span><a href="https://www.briquerealty.com/downloads/">Downloads</a><span>/</span><span>Buyer Agent Transaction Checklist</span></nav>
   <article class="article printable">
@@ -1042,7 +1148,7 @@
   </article>]]></content:encoded>
       <excerpt:encoded><![CDATA[A printable buyer-side transaction workflow from intake through closing.]]></excerpt:encoded>
       
-      <wp:post_id>1012</wp:post_id>
+      <wp:post_id>1013</wp:post_id>
       <wp:post_date>2026-05-22 12:00:00</wp:post_date>
       <wp:post_date_gmt>2026-05-22 12:00:00</wp:post_date_gmt>
       <wp:comment_status>closed</wp:comment_status>
@@ -1061,7 +1167,7 @@
       <link>https://www.briquerealty.com/downloads/brokerage-comparison-worksheet/</link>
       <pubDate>Fri, 22 May 2026 12:00:00 GMT</pubDate>
       <dc:creator><![CDATA[agent-resource-desk]]></dc:creator>
-      <guid isPermaLink="false">https://www.briquerealty.com/downloads/brokerage-comparison-worksheet/?import_id=1013</guid>
+      <guid isPermaLink="false">https://www.briquerealty.com/downloads/brokerage-comparison-worksheet/?import_id=1014</guid>
       <description><![CDATA[A printable worksheet for comparing brokerage costs, support, fees, training, and brand rules.]]></description>
       <content:encoded><![CDATA[<nav class="breadcrumbs" aria-label="Breadcrumb"><a href="https://www.briquerealty.com/">Home</a><span>/</span><a href="https://www.briquerealty.com/downloads/">Downloads</a><span>/</span><span>Brokerage Comparison Worksheet</span></nav>
   <article class="article printable">
@@ -1105,7 +1211,7 @@
   </article>]]></content:encoded>
       <excerpt:encoded><![CDATA[A printable worksheet for comparing brokerage costs, support, fees, training, and brand rules.]]></excerpt:encoded>
       
-      <wp:post_id>1013</wp:post_id>
+      <wp:post_id>1014</wp:post_id>
       <wp:post_date>2026-05-22 12:00:00</wp:post_date>
       <wp:post_date_gmt>2026-05-22 12:00:00</wp:post_date_gmt>
       <wp:comment_status>closed</wp:comment_status>
@@ -1124,7 +1230,7 @@
       <link>https://www.briquerealty.com/downloads/vendor-list-builder/</link>
       <pubDate>Fri, 22 May 2026 12:00:00 GMT</pubDate>
       <dc:creator><![CDATA[agent-resource-desk]]></dc:creator>
-      <guid isPermaLink="false">https://www.briquerealty.com/downloads/vendor-list-builder/?import_id=1014</guid>
+      <guid isPermaLink="false">https://www.briquerealty.com/downloads/vendor-list-builder/?import_id=1015</guid>
       <description><![CDATA[A printable vendor tracking worksheet for agents building a practical service list.]]></description>
       <content:encoded><![CDATA[<nav class="breadcrumbs" aria-label="Breadcrumb"><a href="https://www.briquerealty.com/">Home</a><span>/</span><a href="https://www.briquerealty.com/downloads/">Downloads</a><span>/</span><span>Vendor List Builder</span></nav>
   <article class="article printable">
@@ -1168,7 +1274,7 @@
   </article>]]></content:encoded>
       <excerpt:encoded><![CDATA[A printable vendor tracking worksheet for agents building a practical service list.]]></excerpt:encoded>
       
-      <wp:post_id>1014</wp:post_id>
+      <wp:post_id>1015</wp:post_id>
       <wp:post_date>2026-05-22 12:00:00</wp:post_date>
       <wp:post_date_gmt>2026-05-22 12:00:00</wp:post_date_gmt>
       <wp:comment_status>closed</wp:comment_status>
@@ -1187,7 +1293,7 @@
       <link>https://www.briquerealty.com/downloads/first-closing-preparation-checklist/</link>
       <pubDate>Fri, 22 May 2026 12:00:00 GMT</pubDate>
       <dc:creator><![CDATA[agent-resource-desk]]></dc:creator>
-      <guid isPermaLink="false">https://www.briquerealty.com/downloads/first-closing-preparation-checklist/?import_id=1015</guid>
+      <guid isPermaLink="false">https://www.briquerealty.com/downloads/first-closing-preparation-checklist/?import_id=1016</guid>
       <description><![CDATA[A printable first-closing checklist for agents coordinating final transaction steps.]]></description>
       <content:encoded><![CDATA[<nav class="breadcrumbs" aria-label="Breadcrumb"><a href="https://www.briquerealty.com/">Home</a><span>/</span><a href="https://www.briquerealty.com/downloads/">Downloads</a><span>/</span><span>First Closing Preparation Checklist</span></nav>
   <article class="article printable">
@@ -1231,7 +1337,7 @@
   </article>]]></content:encoded>
       <excerpt:encoded><![CDATA[A printable first-closing checklist for agents coordinating final transaction steps.]]></excerpt:encoded>
       
-      <wp:post_id>1015</wp:post_id>
+      <wp:post_id>1016</wp:post_id>
       <wp:post_date>2026-05-22 12:00:00</wp:post_date>
       <wp:post_date_gmt>2026-05-22 12:00:00</wp:post_date_gmt>
       <wp:comment_status>closed</wp:comment_status>
@@ -1250,7 +1356,7 @@
       <link>https://www.briquerealty.com/downloads/referral-commission-question-sheet/</link>
       <pubDate>Fri, 22 May 2026 12:00:00 GMT</pubDate>
       <dc:creator><![CDATA[agent-resource-desk]]></dc:creator>
-      <guid isPermaLink="false">https://www.briquerealty.com/downloads/referral-commission-question-sheet/?import_id=1016</guid>
+      <guid isPermaLink="false">https://www.briquerealty.com/downloads/referral-commission-question-sheet/?import_id=1017</guid>
       <description><![CDATA[A printable question sheet for documenting referral commission expectations before a client handoff.]]></description>
       <content:encoded><![CDATA[<nav class="breadcrumbs" aria-label="Breadcrumb"><a href="https://www.briquerealty.com/">Home</a><span>/</span><a href="https://www.briquerealty.com/downloads/">Downloads</a><span>/</span><span>Referral Commission Question Sheet</span></nav>
   <article class="article printable">
@@ -1294,7 +1400,7 @@
   </article>]]></content:encoded>
       <excerpt:encoded><![CDATA[A printable question sheet for documenting referral commission expectations before a client handoff.]]></excerpt:encoded>
       
-      <wp:post_id>1016</wp:post_id>
+      <wp:post_id>1017</wp:post_id>
       <wp:post_date>2026-05-22 12:00:00</wp:post_date>
       <wp:post_date_gmt>2026-05-22 12:00:00</wp:post_date_gmt>
       <wp:comment_status>closed</wp:comment_status>
@@ -1313,7 +1419,7 @@
       <link>https://www.briquerealty.com/choose-real-estate-brokerage-georgia/</link>
       <pubDate>Fri, 22 May 2026 12:00:00 GMT</pubDate>
       <dc:creator><![CDATA[agent-resource-desk]]></dc:creator>
-      <guid isPermaLink="false">https://www.briquerealty.com/choose-real-estate-brokerage-georgia/?import_id=1017</guid>
+      <guid isPermaLink="false">https://www.briquerealty.com/choose-real-estate-brokerage-georgia/?import_id=1018</guid>
       <description><![CDATA[A practical guide for Georgia agents comparing brokerage models, support, fees, training, supervision, and business fit.]]></description>
       <content:encoded><![CDATA[<nav class="breadcrumbs" aria-label="Breadcrumb"><a href="https://www.briquerealty.com/">Home</a><span>/</span><a href="https://www.briquerealty.com/articles/">Articles</a><span>/</span><a href="https://www.briquerealty.com/category/agent-basics/">Agent Basics</a><span>/</span><span>How to Choose a Real Estate Brokerage in Georgia</span></nav>
   <article class="article">
@@ -1408,7 +1514,7 @@
   </section>]]></content:encoded>
       <excerpt:encoded><![CDATA[A practical guide for Georgia agents comparing brokerage models, support, fees, training, supervision, and business fit.]]></excerpt:encoded>
       <category domain="category" nicename="agent-basics"><![CDATA[Agent Basics]]></category>
-      <wp:post_id>1017</wp:post_id>
+      <wp:post_id>1018</wp:post_id>
       <wp:post_date>2026-05-22 12:00:00</wp:post_date>
       <wp:post_date_gmt>2026-05-22 12:00:00</wp:post_date_gmt>
       <wp:comment_status>closed</wp:comment_status>
@@ -1427,7 +1533,7 @@
       <link>https://www.briquerealty.com/flat-fee-real-estate-brokerage-georgia-agents/</link>
       <pubDate>Fri, 22 May 2026 12:00:00 GMT</pubDate>
       <dc:creator><![CDATA[agent-resource-desk]]></dc:creator>
-      <guid isPermaLink="false">https://www.briquerealty.com/flat-fee-real-estate-brokerage-georgia-agents/?import_id=1018</guid>
+      <guid isPermaLink="false">https://www.briquerealty.com/flat-fee-real-estate-brokerage-georgia-agents/?import_id=1019</guid>
       <description><![CDATA[Understand flat-fee brokerage models, common cost questions, support tradeoffs, and due diligence steps for Georgia real estate agents.]]></description>
       <content:encoded><![CDATA[<nav class="breadcrumbs" aria-label="Breadcrumb"><a href="https://www.briquerealty.com/">Home</a><span>/</span><a href="https://www.briquerealty.com/articles/">Articles</a><span>/</span><a href="https://www.briquerealty.com/category/brokerage-commission-education/">Brokerage &amp; Commission Education</a><span>/</span><span>Flat-Fee Real Estate Brokerage Explained for Georgia Agents</span></nav>
   <article class="article">
@@ -1522,7 +1628,7 @@
   </section>]]></content:encoded>
       <excerpt:encoded><![CDATA[Understand flat-fee brokerage models, common cost questions, support tradeoffs, and due diligence steps for Georgia real estate agents.]]></excerpt:encoded>
       <category domain="category" nicename="brokerage-amp-commission-education"><![CDATA[Brokerage &amp; Commission Education]]></category>
-      <wp:post_id>1018</wp:post_id>
+      <wp:post_id>1019</wp:post_id>
       <wp:post_date>2026-05-22 12:00:00</wp:post_date>
       <wp:post_date_gmt>2026-05-22 12:00:00</wp:post_date_gmt>
       <wp:comment_status>closed</wp:comment_status>
@@ -1541,7 +1647,7 @@
       <link>https://www.briquerealty.com/new-georgia-real-estate-agent-first-client-checklist/</link>
       <pubDate>Fri, 22 May 2026 12:00:00 GMT</pubDate>
       <dc:creator><![CDATA[agent-resource-desk]]></dc:creator>
-      <guid isPermaLink="false">https://www.briquerealty.com/new-georgia-real-estate-agent-first-client-checklist/?import_id=1019</guid>
+      <guid isPermaLink="false">https://www.briquerealty.com/new-georgia-real-estate-agent-first-client-checklist/?import_id=1020</guid>
       <description><![CDATA[A first-client readiness checklist for new Georgia real estate agents covering broker support, forms, vendors, MLS access, and communication.]]></description>
       <content:encoded><![CDATA[<nav class="breadcrumbs" aria-label="Breadcrumb"><a href="https://www.briquerealty.com/">Home</a><span>/</span><a href="https://www.briquerealty.com/articles/">Articles</a><span>/</span><a href="https://www.briquerealty.com/category/agent-basics/">Agent Basics</a><span>/</span><span>What New Georgia Real Estate Agents Need Before Their First Client</span></nav>
   <article class="article">
@@ -1636,7 +1742,7 @@
   </section>]]></content:encoded>
       <excerpt:encoded><![CDATA[A first-client readiness checklist for new Georgia real estate agents covering broker support, forms, vendors, MLS access, and communication.]]></excerpt:encoded>
       <category domain="category" nicename="agent-basics"><![CDATA[Agent Basics]]></category>
-      <wp:post_id>1019</wp:post_id>
+      <wp:post_id>1020</wp:post_id>
       <wp:post_date>2026-05-22 12:00:00</wp:post_date>
       <wp:post_date_gmt>2026-05-22 12:00:00</wp:post_date_gmt>
       <wp:comment_status>closed</wp:comment_status>
@@ -1655,7 +1761,7 @@
       <link>https://www.briquerealty.com/fmls-vs-georgia-mls-agents/</link>
       <pubDate>Fri, 22 May 2026 12:00:00 GMT</pubDate>
       <dc:creator><![CDATA[agent-resource-desk]]></dc:creator>
-      <guid isPermaLink="false">https://www.briquerealty.com/fmls-vs-georgia-mls-agents/?import_id=1020</guid>
+      <guid isPermaLink="false">https://www.briquerealty.com/fmls-vs-georgia-mls-agents/?import_id=1021</guid>
       <description><![CDATA[A cautious agent education guide to FMLS, Georgia MLS, listing exposure, data entry, and questions to ask before relying on MLS systems.]]></description>
       <content:encoded><![CDATA[<nav class="breadcrumbs" aria-label="Breadcrumb"><a href="https://www.briquerealty.com/">Home</a><span>/</span><a href="https://www.briquerealty.com/articles/">Articles</a><span>/</span><a href="https://www.briquerealty.com/category/mls-education/">MLS Education</a><span>/</span><span>FMLS vs Georgia MLS: What Agents Should Understand</span></nav>
   <article class="article">
@@ -1750,7 +1856,7 @@
   </section>]]></content:encoded>
       <excerpt:encoded><![CDATA[A cautious agent education guide to FMLS, Georgia MLS, listing exposure, data entry, and questions to ask before relying on MLS systems.]]></excerpt:encoded>
       <category domain="category" nicename="mls-education"><![CDATA[MLS Education]]></category>
-      <wp:post_id>1020</wp:post_id>
+      <wp:post_id>1021</wp:post_id>
       <wp:post_date>2026-05-22 12:00:00</wp:post_date>
       <wp:post_date_gmt>2026-05-22 12:00:00</wp:post_date_gmt>
       <wp:comment_status>closed</wp:comment_status>
@@ -1769,7 +1875,7 @@
       <link>https://www.briquerealty.com/real-estate-referral-commissions-georgia/</link>
       <pubDate>Fri, 22 May 2026 12:00:00 GMT</pubDate>
       <dc:creator><![CDATA[agent-resource-desk]]></dc:creator>
-      <guid isPermaLink="false">https://www.briquerealty.com/real-estate-referral-commissions-georgia/?import_id=1021</guid>
+      <guid isPermaLink="false">https://www.briquerealty.com/real-estate-referral-commissions-georgia/?import_id=1022</guid>
       <description><![CDATA[A practical Georgia agent guide to referral commission questions, documentation, timing, and compliance-minded expectations.]]></description>
       <content:encoded><![CDATA[<nav class="breadcrumbs" aria-label="Breadcrumb"><a href="https://www.briquerealty.com/">Home</a><span>/</span><a href="https://www.briquerealty.com/articles/">Articles</a><span>/</span><a href="https://www.briquerealty.com/category/referrals-rentals/">Referrals &amp; Rentals</a><span>/</span><span>How Real Estate Referral Commissions Work in Georgia</span></nav>
   <article class="article">
@@ -1864,7 +1970,7 @@
   </section>]]></content:encoded>
       <excerpt:encoded><![CDATA[A practical Georgia agent guide to referral commission questions, documentation, timing, and compliance-minded expectations.]]></excerpt:encoded>
       <category domain="category" nicename="referrals-amp-rentals"><![CDATA[Referrals &amp; Rentals]]></category>
-      <wp:post_id>1021</wp:post_id>
+      <wp:post_id>1022</wp:post_id>
       <wp:post_date>2026-05-22 12:00:00</wp:post_date>
       <wp:post_date_gmt>2026-05-22 12:00:00</wp:post_date_gmt>
       <wp:comment_status>closed</wp:comment_status>
@@ -1883,7 +1989,7 @@
       <link>https://www.briquerealty.com/rental-commissions-real-estate-agents/</link>
       <pubDate>Fri, 22 May 2026 12:00:00 GMT</pubDate>
       <dc:creator><![CDATA[agent-resource-desk]]></dc:creator>
-      <guid isPermaLink="false">https://www.briquerealty.com/rental-commissions-real-estate-agents/?import_id=1022</guid>
+      <guid isPermaLink="false">https://www.briquerealty.com/rental-commissions-real-estate-agents/?import_id=1023</guid>
       <description><![CDATA[A practical agent guide to rental commissions, leasing workflows, landlord and tenant expectations, and fee questions.]]></description>
       <content:encoded><![CDATA[<nav class="breadcrumbs" aria-label="Breadcrumb"><a href="https://www.briquerealty.com/">Home</a><span>/</span><a href="https://www.briquerealty.com/articles/">Articles</a><span>/</span><a href="https://www.briquerealty.com/category/referrals-rentals/">Referrals &amp; Rentals</a><span>/</span><span>Rental Commissions for Real Estate Agents: A Practical Guide</span></nav>
   <article class="article">
@@ -1978,7 +2084,7 @@
   </section>]]></content:encoded>
       <excerpt:encoded><![CDATA[A practical agent guide to rental commissions, leasing workflows, landlord and tenant expectations, and fee questions.]]></excerpt:encoded>
       <category domain="category" nicename="referrals-amp-rentals"><![CDATA[Referrals &amp; Rentals]]></category>
-      <wp:post_id>1022</wp:post_id>
+      <wp:post_id>1023</wp:post_id>
       <wp:post_date>2026-05-22 12:00:00</wp:post_date>
       <wp:post_date_gmt>2026-05-22 12:00:00</wp:post_date_gmt>
       <wp:comment_status>closed</wp:comment_status>
@@ -1997,7 +2103,7 @@
       <link>https://www.briquerealty.com/pay-at-close-real-estate-agents/</link>
       <pubDate>Fri, 22 May 2026 12:00:00 GMT</pubDate>
       <dc:creator><![CDATA[agent-resource-desk]]></dc:creator>
-      <guid isPermaLink="false">https://www.briquerealty.com/pay-at-close-real-estate-agents/?import_id=1023</guid>
+      <guid isPermaLink="false">https://www.briquerealty.com/pay-at-close-real-estate-agents/?import_id=1024</guid>
       <description><![CDATA[Learn what pay-at-close can mean for real estate agents and how to plan for fees, cash flow, and closing timing.]]></description>
       <content:encoded><![CDATA[<nav class="breadcrumbs" aria-label="Breadcrumb"><a href="https://www.briquerealty.com/">Home</a><span>/</span><a href="https://www.briquerealty.com/articles/">Articles</a><span>/</span><a href="https://www.briquerealty.com/category/brokerage-commission-education/">Brokerage &amp; Commission Education</a><span>/</span><span>Pay-at-Close for Real Estate Agents: What It Means and How to Prepare</span></nav>
   <article class="article">
@@ -2092,7 +2198,7 @@
   </section>]]></content:encoded>
       <excerpt:encoded><![CDATA[Learn what pay-at-close can mean for real estate agents and how to plan for fees, cash flow, and closing timing.]]></excerpt:encoded>
       <category domain="category" nicename="brokerage-amp-commission-education"><![CDATA[Brokerage &amp; Commission Education]]></category>
-      <wp:post_id>1023</wp:post_id>
+      <wp:post_id>1024</wp:post_id>
       <wp:post_date>2026-05-22 12:00:00</wp:post_date>
       <wp:post_date_gmt>2026-05-22 12:00:00</wp:post_date_gmt>
       <wp:comment_status>closed</wp:comment_status>
@@ -2111,7 +2217,7 @@
       <link>https://www.briquerealty.com/listing-prep-checklist-georgia-agents/</link>
       <pubDate>Fri, 22 May 2026 12:00:00 GMT</pubDate>
       <dc:creator><![CDATA[agent-resource-desk]]></dc:creator>
-      <guid isPermaLink="false">https://www.briquerealty.com/listing-prep-checklist-georgia-agents/?import_id=1024</guid>
+      <guid isPermaLink="false">https://www.briquerealty.com/listing-prep-checklist-georgia-agents/?import_id=1025</guid>
       <description><![CDATA[A practical listing preparation checklist for Georgia agents covering seller intake, property details, pricing, photos, MLS, and launch readiness.]]></description>
       <content:encoded><![CDATA[<nav class="breadcrumbs" aria-label="Breadcrumb"><a href="https://www.briquerealty.com/">Home</a><span>/</span><a href="https://www.briquerealty.com/articles/">Articles</a><span>/</span><a href="https://www.briquerealty.com/category/listing-preparation/">Listing Preparation</a><span>/</span><span>Listing Prep Checklist for Georgia Real Estate Agents</span></nav>
   <article class="article">
@@ -2206,7 +2312,7 @@
   </section>]]></content:encoded>
       <excerpt:encoded><![CDATA[A practical listing preparation checklist for Georgia agents covering seller intake, property details, pricing, photos, MLS, and launch readiness.]]></excerpt:encoded>
       <category domain="category" nicename="listing-preparation"><![CDATA[Listing Preparation]]></category>
-      <wp:post_id>1024</wp:post_id>
+      <wp:post_id>1025</wp:post_id>
       <wp:post_date>2026-05-22 12:00:00</wp:post_date>
       <wp:post_date_gmt>2026-05-22 12:00:00</wp:post_date_gmt>
       <wp:comment_status>closed</wp:comment_status>
@@ -2225,7 +2331,7 @@
       <link>https://www.briquerealty.com/buyer-agent-checklist-georgia-real-estate/</link>
       <pubDate>Fri, 22 May 2026 12:00:00 GMT</pubDate>
       <dc:creator><![CDATA[agent-resource-desk]]></dc:creator>
-      <guid isPermaLink="false">https://www.briquerealty.com/buyer-agent-checklist-georgia-real-estate/?import_id=1025</guid>
+      <guid isPermaLink="false">https://www.briquerealty.com/buyer-agent-checklist-georgia-real-estate/?import_id=1026</guid>
       <description><![CDATA[A buyer agent checklist for Georgia real estate transactions, from intake and financing to offers, inspections, and closing preparation.]]></description>
       <content:encoded><![CDATA[<nav class="breadcrumbs" aria-label="Breadcrumb"><a href="https://www.briquerealty.com/">Home</a><span>/</span><a href="https://www.briquerealty.com/articles/">Articles</a><span>/</span><a href="https://www.briquerealty.com/category/buyer-representation/">Buyer Representation</a><span>/</span><span>Buyer Agent Checklist for Georgia Real Estate Transactions</span></nav>
   <article class="article">
@@ -2320,7 +2426,7 @@
   </section>]]></content:encoded>
       <excerpt:encoded><![CDATA[A buyer agent checklist for Georgia real estate transactions, from intake and financing to offers, inspections, and closing preparation.]]></excerpt:encoded>
       <category domain="category" nicename="buyer-representation"><![CDATA[Buyer Representation]]></category>
-      <wp:post_id>1025</wp:post_id>
+      <wp:post_id>1026</wp:post_id>
       <wp:post_date>2026-05-22 12:00:00</wp:post_date>
       <wp:post_date_gmt>2026-05-22 12:00:00</wp:post_date_gmt>
       <wp:comment_status>closed</wp:comment_status>
@@ -2339,7 +2445,7 @@
       <link>https://www.briquerealty.com/earnest-money-guide-real-estate-agents/</link>
       <pubDate>Fri, 22 May 2026 12:00:00 GMT</pubDate>
       <dc:creator><![CDATA[agent-resource-desk]]></dc:creator>
-      <guid isPermaLink="false">https://www.briquerealty.com/earnest-money-guide-real-estate-agents/?import_id=1026</guid>
+      <guid isPermaLink="false">https://www.briquerealty.com/earnest-money-guide-real-estate-agents/?import_id=1027</guid>
       <description><![CDATA[A compliance-minded earnest money guide for agents covering timing, holder questions, documentation, and client communication.]]></description>
       <content:encoded><![CDATA[<nav class="breadcrumbs" aria-label="Breadcrumb"><a href="https://www.briquerealty.com/">Home</a><span>/</span><a href="https://www.briquerealty.com/articles/">Articles</a><span>/</span><a href="https://www.briquerealty.com/category/transaction-basics/">Transaction Basics</a><span>/</span><span>What Real Estate Agents Should Know About Earnest Money</span></nav>
   <article class="article">
@@ -2434,7 +2540,7 @@
   </section>]]></content:encoded>
       <excerpt:encoded><![CDATA[A compliance-minded earnest money guide for agents covering timing, holder questions, documentation, and client communication.]]></excerpt:encoded>
       <category domain="category" nicename="transaction-basics"><![CDATA[Transaction Basics]]></category>
-      <wp:post_id>1026</wp:post_id>
+      <wp:post_id>1027</wp:post_id>
       <wp:post_date>2026-05-22 12:00:00</wp:post_date>
       <wp:post_date_gmt>2026-05-22 12:00:00</wp:post_date_gmt>
       <wp:comment_status>closed</wp:comment_status>
@@ -2453,7 +2559,7 @@
       <link>https://www.briquerealty.com/real-estate-agent-vendor-list/</link>
       <pubDate>Fri, 22 May 2026 12:00:00 GMT</pubDate>
       <dc:creator><![CDATA[agent-resource-desk]]></dc:creator>
-      <guid isPermaLink="false">https://www.briquerealty.com/real-estate-agent-vendor-list/?import_id=1027</guid>
+      <guid isPermaLink="false">https://www.briquerealty.com/real-estate-agent-vendor-list/?import_id=1028</guid>
       <description><![CDATA[Learn how agents can build a practical vendor list for lenders, inspectors, attorneys, photographers, contractors, and client service.]]></description>
       <content:encoded><![CDATA[<nav class="breadcrumbs" aria-label="Breadcrumb"><a href="https://www.briquerealty.com/">Home</a><span>/</span><a href="https://www.briquerealty.com/articles/">Articles</a><span>/</span><a href="https://www.briquerealty.com/category/agent-business-growth/">Agent Business Growth</a><span>/</span><span>How to Build a Vendor List as a Real Estate Agent</span></nav>
   <article class="article">
@@ -2548,7 +2654,7 @@
   </section>]]></content:encoded>
       <excerpt:encoded><![CDATA[Learn how agents can build a practical vendor list for lenders, inspectors, attorneys, photographers, contractors, and client service.]]></excerpt:encoded>
       <category domain="category" nicename="agent-business-growth"><![CDATA[Agent Business Growth]]></category>
-      <wp:post_id>1027</wp:post_id>
+      <wp:post_id>1028</wp:post_id>
       <wp:post_date>2026-05-22 12:00:00</wp:post_date>
       <wp:post_date_gmt>2026-05-22 12:00:00</wp:post_date_gmt>
       <wp:comment_status>closed</wp:comment_status>
@@ -2567,7 +2673,7 @@
       <link>https://www.briquerealty.com/part-time-real-estate-agent-productivity/</link>
       <pubDate>Fri, 22 May 2026 12:00:00 GMT</pubDate>
       <dc:creator><![CDATA[agent-resource-desk]]></dc:creator>
-      <guid isPermaLink="false">https://www.briquerealty.com/part-time-real-estate-agent-productivity/?import_id=1028</guid>
+      <guid isPermaLink="false">https://www.briquerealty.com/part-time-real-estate-agent-productivity/?import_id=1029</guid>
       <description><![CDATA[A practical productivity guide for part-time real estate agents balancing clients, compliance, lead follow-up, and limited hours.]]></description>
       <content:encoded><![CDATA[<nav class="breadcrumbs" aria-label="Breadcrumb"><a href="https://www.briquerealty.com/">Home</a><span>/</span><a href="https://www.briquerealty.com/articles/">Articles</a><span>/</span><a href="https://www.briquerealty.com/category/agent-business-growth/">Agent Business Growth</a><span>/</span><span>How Part-Time Real Estate Agents Can Stay Productive</span></nav>
   <article class="article">
@@ -2662,7 +2768,7 @@
   </section>]]></content:encoded>
       <excerpt:encoded><![CDATA[A practical productivity guide for part-time real estate agents balancing clients, compliance, lead follow-up, and limited hours.]]></excerpt:encoded>
       <category domain="category" nicename="agent-business-growth"><![CDATA[Agent Business Growth]]></category>
-      <wp:post_id>1028</wp:post_id>
+      <wp:post_id>1029</wp:post_id>
       <wp:post_date>2026-05-22 12:00:00</wp:post_date>
       <wp:post_date_gmt>2026-05-22 12:00:00</wp:post_date_gmt>
       <wp:comment_status>closed</wp:comment_status>
@@ -2681,7 +2787,7 @@
       <link>https://www.briquerealty.com/referral-based-real-estate-business/</link>
       <pubDate>Fri, 22 May 2026 12:00:00 GMT</pubDate>
       <dc:creator><![CDATA[agent-resource-desk]]></dc:creator>
-      <guid isPermaLink="false">https://www.briquerealty.com/referral-based-real-estate-business/?import_id=1029</guid>
+      <guid isPermaLink="false">https://www.briquerealty.com/referral-based-real-estate-business/?import_id=1030</guid>
       <description><![CDATA[A practical guide to building a referral-based real estate business through relationships, service systems, and documented handoffs.]]></description>
       <content:encoded><![CDATA[<nav class="breadcrumbs" aria-label="Breadcrumb"><a href="https://www.briquerealty.com/">Home</a><span>/</span><a href="https://www.briquerealty.com/articles/">Articles</a><span>/</span><a href="https://www.briquerealty.com/category/agent-business-growth/">Agent Business Growth</a><span>/</span><span>How Agents Can Build a Referral-Based Real Estate Business</span></nav>
   <article class="article">
@@ -2776,7 +2882,7 @@
   </section>]]></content:encoded>
       <excerpt:encoded><![CDATA[A practical guide to building a referral-based real estate business through relationships, service systems, and documented handoffs.]]></excerpt:encoded>
       <category domain="category" nicename="agent-business-growth"><![CDATA[Agent Business Growth]]></category>
-      <wp:post_id>1029</wp:post_id>
+      <wp:post_id>1030</wp:post_id>
       <wp:post_date>2026-05-22 12:00:00</wp:post_date>
       <wp:post_date_gmt>2026-05-22 12:00:00</wp:post_date_gmt>
       <wp:comment_status>closed</wp:comment_status>
@@ -2795,7 +2901,7 @@
       <link>https://www.briquerealty.com/real-estate-agent-branding-guide/</link>
       <pubDate>Fri, 22 May 2026 12:00:00 GMT</pubDate>
       <dc:creator><![CDATA[agent-resource-desk]]></dc:creator>
-      <guid isPermaLink="false">https://www.briquerealty.com/real-estate-agent-branding-guide/?import_id=1030</guid>
+      <guid isPermaLink="false">https://www.briquerealty.com/real-estate-agent-branding-guide/?import_id=1031</guid>
       <description><![CDATA[A practical real estate agent branding guide focused on trust, clarity, consistency, and compliance-minded public presentation.]]></description>
       <content:encoded><![CDATA[<nav class="breadcrumbs" aria-label="Breadcrumb"><a href="https://www.briquerealty.com/">Home</a><span>/</span><a href="https://www.briquerealty.com/articles/">Articles</a><span>/</span><a href="https://www.briquerealty.com/category/agent-branding/">Agent Branding</a><span>/</span><span>Real Estate Agent Branding: How to Build Trust Without Overcomplicating It</span></nav>
   <article class="article">
@@ -2890,7 +2996,7 @@
   </section>]]></content:encoded>
       <excerpt:encoded><![CDATA[A practical real estate agent branding guide focused on trust, clarity, consistency, and compliance-minded public presentation.]]></excerpt:encoded>
       <category domain="category" nicename="agent-branding"><![CDATA[Agent Branding]]></category>
-      <wp:post_id>1030</wp:post_id>
+      <wp:post_id>1031</wp:post_id>
       <wp:post_date>2026-05-22 12:00:00</wp:post_date>
       <wp:post_date_gmt>2026-05-22 12:00:00</wp:post_date_gmt>
       <wp:comment_status>closed</wp:comment_status>
@@ -2909,7 +3015,7 @@
       <link>https://www.briquerealty.com/dba-branding-real-estate-agents/</link>
       <pubDate>Fri, 22 May 2026 12:00:00 GMT</pubDate>
       <dc:creator><![CDATA[agent-resource-desk]]></dc:creator>
-      <guid isPermaLink="false">https://www.briquerealty.com/dba-branding-real-estate-agents/?import_id=1031</guid>
+      <guid isPermaLink="false">https://www.briquerealty.com/dba-branding-real-estate-agents/?import_id=1032</guid>
       <description><![CDATA[A compliance-minded guide for agents thinking about DBA branding, public names, broker rules, and advertising review.]]></description>
       <content:encoded><![CDATA[<nav class="breadcrumbs" aria-label="Breadcrumb"><a href="https://www.briquerealty.com/">Home</a><span>/</span><a href="https://www.briquerealty.com/articles/">Articles</a><span>/</span><a href="https://www.briquerealty.com/category/agent-branding/">Agent Branding</a><span>/</span><span>DBA Branding for Real Estate Agents: What to Think Through</span></nav>
   <article class="article">
@@ -3004,7 +3110,7 @@
   </section>]]></content:encoded>
       <excerpt:encoded><![CDATA[A compliance-minded guide for agents thinking about DBA branding, public names, broker rules, and advertising review.]]></excerpt:encoded>
       <category domain="category" nicename="agent-branding"><![CDATA[Agent Branding]]></category>
-      <wp:post_id>1031</wp:post_id>
+      <wp:post_id>1032</wp:post_id>
       <wp:post_date>2026-05-22 12:00:00</wp:post_date>
       <wp:post_date_gmt>2026-05-22 12:00:00</wp:post_date_gmt>
       <wp:comment_status>closed</wp:comment_status>
@@ -3023,7 +3129,7 @@
       <link>https://www.briquerealty.com/new-real-estate-agent-mistakes/</link>
       <pubDate>Fri, 22 May 2026 12:00:00 GMT</pubDate>
       <dc:creator><![CDATA[agent-resource-desk]]></dc:creator>
-      <guid isPermaLink="false">https://www.briquerealty.com/new-real-estate-agent-mistakes/?import_id=1032</guid>
+      <guid isPermaLink="false">https://www.briquerealty.com/new-real-estate-agent-mistakes/?import_id=1033</guid>
       <description><![CDATA[A plain-English guide to common new real estate agent mistakes and how to avoid them with better systems and expectations.]]></description>
       <content:encoded><![CDATA[<nav class="breadcrumbs" aria-label="Breadcrumb"><a href="https://www.briquerealty.com/">Home</a><span>/</span><a href="https://www.briquerealty.com/articles/">Articles</a><span>/</span><a href="https://www.briquerealty.com/category/agent-basics/">Agent Basics</a><span>/</span><span>Common Mistakes New Real Estate Agents Make After Getting Licensed</span></nav>
   <article class="article">
@@ -3118,7 +3224,7 @@
   </section>]]></content:encoded>
       <excerpt:encoded><![CDATA[A plain-English guide to common new real estate agent mistakes and how to avoid them with better systems and expectations.]]></excerpt:encoded>
       <category domain="category" nicename="agent-basics"><![CDATA[Agent Basics]]></category>
-      <wp:post_id>1032</wp:post_id>
+      <wp:post_id>1033</wp:post_id>
       <wp:post_date>2026-05-22 12:00:00</wp:post_date>
       <wp:post_date_gmt>2026-05-22 12:00:00</wp:post_date_gmt>
       <wp:comment_status>closed</wp:comment_status>
@@ -3137,7 +3243,7 @@
       <link>https://www.briquerealty.com/georgia-real-estate-advertising-basics-agents/</link>
       <pubDate>Fri, 22 May 2026 12:00:00 GMT</pubDate>
       <dc:creator><![CDATA[agent-resource-desk]]></dc:creator>
-      <guid isPermaLink="false">https://www.briquerealty.com/georgia-real-estate-advertising-basics-agents/?import_id=1033</guid>
+      <guid isPermaLink="false">https://www.briquerealty.com/georgia-real-estate-advertising-basics-agents/?import_id=1034</guid>
       <description><![CDATA[A compliance-minded overview of Georgia real estate advertising basics for agents, including broker review, disclosures, fair housing, and online content.]]></description>
       <content:encoded><![CDATA[<nav class="breadcrumbs" aria-label="Breadcrumb"><a href="https://www.briquerealty.com/">Home</a><span>/</span><a href="https://www.briquerealty.com/articles/">Articles</a><span>/</span><a href="https://www.briquerealty.com/category/compliance-minded-guides/">Compliance-Minded Guides</a><span>/</span><span>Georgia Real Estate Advertising Basics for Agents</span></nav>
   <article class="article">
@@ -3232,7 +3338,7 @@
   </section>]]></content:encoded>
       <excerpt:encoded><![CDATA[A compliance-minded overview of Georgia real estate advertising basics for agents, including broker review, disclosures, fair housing, and online content.]]></excerpt:encoded>
       <category domain="category" nicename="compliance-minded-guides"><![CDATA[Compliance-Minded Guides]]></category>
-      <wp:post_id>1033</wp:post_id>
+      <wp:post_id>1034</wp:post_id>
       <wp:post_date>2026-05-22 12:00:00</wp:post_date>
       <wp:post_date_gmt>2026-05-22 12:00:00</wp:post_date_gmt>
       <wp:comment_status>closed</wp:comment_status>
@@ -3251,7 +3357,7 @@
       <link>https://www.briquerealty.com/first-real-estate-closing-checklist/</link>
       <pubDate>Fri, 22 May 2026 12:00:00 GMT</pubDate>
       <dc:creator><![CDATA[agent-resource-desk]]></dc:creator>
-      <guid isPermaLink="false">https://www.briquerealty.com/first-real-estate-closing-checklist/?import_id=1034</guid>
+      <guid isPermaLink="false">https://www.briquerealty.com/first-real-estate-closing-checklist/?import_id=1035</guid>
       <description><![CDATA[A first closing preparation checklist for agents covering documents, lender updates, title questions, walk-through, and client communication.]]></description>
       <content:encoded><![CDATA[<nav class="breadcrumbs" aria-label="Breadcrumb"><a href="https://www.briquerealty.com/">Home</a><span>/</span><a href="https://www.briquerealty.com/articles/">Articles</a><span>/</span><a href="https://www.briquerealty.com/category/transaction-basics/">Transaction Basics</a><span>/</span><span>How to Prepare for Your First Real Estate Closing</span></nav>
   <article class="article">
@@ -3346,7 +3452,7 @@
   </section>]]></content:encoded>
       <excerpt:encoded><![CDATA[A first closing preparation checklist for agents covering documents, lender updates, title questions, walk-through, and client communication.]]></excerpt:encoded>
       <category domain="category" nicename="transaction-basics"><![CDATA[Transaction Basics]]></category>
-      <wp:post_id>1034</wp:post_id>
+      <wp:post_id>1035</wp:post_id>
       <wp:post_date>2026-05-22 12:00:00</wp:post_date>
       <wp:post_date_gmt>2026-05-22 12:00:00</wp:post_date_gmt>
       <wp:comment_status>closed</wp:comment_status>
@@ -3365,7 +3471,7 @@
       <link>https://www.briquerealty.com/short-term-rental-investing-georgia-basics/</link>
       <pubDate>Fri, 22 May 2026 12:00:00 GMT</pubDate>
       <dc:creator><![CDATA[agent-resource-desk]]></dc:creator>
-      <guid isPermaLink="false">https://www.briquerealty.com/short-term-rental-investing-georgia-basics/?import_id=1035</guid>
+      <guid isPermaLink="false">https://www.briquerealty.com/short-term-rental-investing-georgia-basics/?import_id=1036</guid>
       <description><![CDATA[A beginner-friendly guide to short-term rental investing basics for Georgia property owners, including local rules, operations, and risk questions.]]></description>
       <content:encoded><![CDATA[<nav class="breadcrumbs" aria-label="Breadcrumb"><a href="https://www.briquerealty.com/">Home</a><span>/</span><a href="https://www.briquerealty.com/articles/">Articles</a><span>/</span><a href="https://www.briquerealty.com/category/investor-education/">Investor Education</a><span>/</span><span>Short-Term Rental Investing Basics for Georgia Property Owners</span></nav>
   <article class="article">
@@ -3460,7 +3566,7 @@
   </section>]]></content:encoded>
       <excerpt:encoded><![CDATA[A beginner-friendly guide to short-term rental investing basics for Georgia property owners, including local rules, operations, and risk questions.]]></excerpt:encoded>
       <category domain="category" nicename="investor-education"><![CDATA[Investor Education]]></category>
-      <wp:post_id>1035</wp:post_id>
+      <wp:post_id>1036</wp:post_id>
       <wp:post_date>2026-05-22 12:00:00</wp:post_date>
       <wp:post_date_gmt>2026-05-22 12:00:00</wp:post_date_gmt>
       <wp:comment_status>closed</wp:comment_status>
@@ -3479,7 +3585,7 @@
       <link>https://www.briquerealty.com/real-estate-long-term-wealth-building/</link>
       <pubDate>Fri, 22 May 2026 12:00:00 GMT</pubDate>
       <dc:creator><![CDATA[agent-resource-desk]]></dc:creator>
-      <guid isPermaLink="false">https://www.briquerealty.com/real-estate-long-term-wealth-building/?import_id=1036</guid>
+      <guid isPermaLink="false">https://www.briquerealty.com/real-estate-long-term-wealth-building/?import_id=1037</guid>
       <description><![CDATA[A practical educational guide to real estate as a long-term wealth tool, covering cash flow, equity, leverage, risk, and due diligence.]]></description>
       <content:encoded><![CDATA[<nav class="breadcrumbs" aria-label="Breadcrumb"><a href="https://www.briquerealty.com/">Home</a><span>/</span><a href="https://www.briquerealty.com/articles/">Articles</a><span>/</span><a href="https://www.briquerealty.com/category/investor-education/">Investor Education</a><span>/</span><span>Real Estate as a Tool for Building Long-Term Wealth</span></nav>
   <article class="article">
@@ -3574,7 +3680,7 @@
   </section>]]></content:encoded>
       <excerpt:encoded><![CDATA[A practical educational guide to real estate as a long-term wealth tool, covering cash flow, equity, leverage, risk, and due diligence.]]></excerpt:encoded>
       <category domain="category" nicename="investor-education"><![CDATA[Investor Education]]></category>
-      <wp:post_id>1036</wp:post_id>
+      <wp:post_id>1037</wp:post_id>
       <wp:post_date>2026-05-22 12:00:00</wp:post_date>
       <wp:post_date_gmt>2026-05-22 12:00:00</wp:post_date_gmt>
       <wp:comment_status>closed</wp:comment_status>

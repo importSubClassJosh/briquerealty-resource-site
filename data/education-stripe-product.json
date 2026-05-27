@@ -1,0 +1,16 @@
+{
+  "mode": "live",
+  "updated_at": "2026-05-27T16:56:00-04:00",
+  "success_url": "https://www.briquerealty.com/education/?exam_prep=paid&session_id={CHECKOUT_SESSION_ID}",
+  "product": {
+    "product_key": "national_exam_prep_full",
+    "name": "BriqueRealty Full Exam Prep - $19",
+    "description": "One-time unlock for national real estate license exam mixed practice, timed mock exams, saved progress, missed-question review, weak-area scoring, and mnemonic cram sheets.",
+    "price_cents": 1900,
+    "currency": "usd",
+    "stripe_product_id": "prod_Ub0XUmFxIUdNdC",
+    "stripe_price_id": "price_1TboWKBnkZpGl02mv2Ik1oH0",
+    "stripe_payment_link_id": "plink_1TboWKBnkZpGl02moQQOQ8Ir",
+    "payment_link_url": "https://buy.stripe.com/28EaEW62x1Hf6kq8pWbjW05"
+  }
+}

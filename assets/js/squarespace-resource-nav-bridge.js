@@ -1,11 +1,13 @@
 (function () {
-  var NAV_BRIDGE_VERSION = '2026-05-22-guides-compact';
+  var NAV_BRIDGE_VERSION = '2026-05-27-education';
   if (window.brqResourceNavBridgeVersion === NAV_BRIDGE_VERSION) return;
   window.brqResourceNavBridgeVersion = NAV_BRIDGE_VERSION;
   window.brqResourceNavBridgeLoaded = true;
 
   var RESOURCE_HREF = '/resource-center/';
   var RESOURCE_TEXT = 'GUIDES';
+  var EDUCATION_HREF = '/education/';
+  var EDUCATION_TEXT = 'EDUCATION';
 
   function text(value) {
     return String(value || '').replace(/\s+/g, ' ').trim().toUpperCase();
@@ -18,6 +20,13 @@
     });
   }
 
+  function hasEducationLink(root) {
+    return Array.prototype.some.call(root.querySelectorAll('a'), function (link) {
+      var href = link.getAttribute('href') || '';
+      return href === EDUCATION_HREF || href === '/education';
+    });
+  }
+
   function normalizeResourceLinks(root) {
     Array.prototype.forEach.call(root.querySelectorAll('a'), function (link) {
       var href = link.getAttribute('href') || '';
@@ -26,6 +35,17 @@
       if (mobileLabel) mobileLabel.textContent = RESOURCE_TEXT;
       else link.textContent = RESOURCE_TEXT;
       link.setAttribute('aria-label', 'Guides and resources');
+    });
+  }
+
+  function normalizeEducationLinks(root) {
+    Array.prototype.forEach.call(root.querySelectorAll('a'), function (link) {
+      var href = link.getAttribute('href') || '';
+      if (href !== EDUCATION_HREF && href !== '/education') return;
+      var mobileLabel = link.querySelector('.header-menu-nav-item-content');
+      if (mobileLabel) mobileLabel.textContent = EDUCATION_TEXT;
+      else link.textContent = EDUCATION_TEXT;
+      link.setAttribute('aria-label', 'Real estate license exam prep education');
     });
   }
 
@@ -62,6 +82,7 @@
   function addDesktopLink() {
     document.querySelectorAll('.header-nav-list').forEach(function (nav) {
       normalizeResourceLinks(nav);
+      normalizeEducationLinks(nav);
       if (hasResourceLink(nav)) return;
       var item = document.createElement('div');
       item.className = 'header-nav-item header-nav-item--collection brq-resource-nav-item';
@@ -80,9 +101,33 @@
     });
   }
 
+  function addDesktopEducationLink() {
+    document.querySelectorAll('.header-nav-list').forEach(function (nav) {
+      normalizeEducationLinks(nav);
+      if (hasEducationLink(nav)) return;
+      var item = document.createElement('div');
+      item.className = 'header-nav-item header-nav-item--collection brq-education-nav-item';
+
+      var link = document.createElement('a');
+      link.href = EDUCATION_HREF;
+      link.setAttribute('data-animation-role', 'header-element');
+      link.textContent = EDUCATION_TEXT;
+      item.appendChild(link);
+
+      var guides = findItemByLabel(nav, RESOURCE_TEXT);
+      var blog = findItemByLabel(nav, 'BLOG');
+      var contact = findItemByLabel(nav, 'CONTACT');
+      if (guides) insertAfter(nav, item, guides);
+      else if (blog) insertAfter(nav, item, blog);
+      else if (contact) nav.insertBefore(item, contact);
+      else nav.appendChild(item);
+    });
+  }
+
   function addMobileLink() {
     document.querySelectorAll('.header-menu-nav-wrapper').forEach(function (wrapper) {
       normalizeResourceLinks(wrapper);
+      normalizeEducationLinks(wrapper);
       if (hasResourceLink(wrapper)) return;
       var item = document.createElement('div');
       item.className = 'container header-menu-nav-item header-menu-nav-item--collection brq-resource-menu-item';
@@ -104,10 +149,38 @@
     });
   }
 
+  function addMobileEducationLink() {
+    document.querySelectorAll('.header-menu-nav-wrapper').forEach(function (wrapper) {
+      normalizeEducationLinks(wrapper);
+      if (hasEducationLink(wrapper)) return;
+      var item = document.createElement('div');
+      item.className = 'container header-menu-nav-item header-menu-nav-item--collection brq-education-menu-item';
+
+      var link = document.createElement('a');
+      link.href = EDUCATION_HREF;
+
+      var label = document.createElement('div');
+      label.className = 'header-menu-nav-item-content';
+      label.textContent = EDUCATION_TEXT;
+      link.appendChild(label);
+      item.appendChild(link);
+
+      var guides = findItemByLabel(wrapper, RESOURCE_TEXT);
+      var blog = findItemByLabel(wrapper, 'BLOG');
+      var contact = findItemByLabel(wrapper, 'CONTACT');
+      if (guides) insertAfter(wrapper, item, guides);
+      else if (blog) insertAfter(wrapper, item, blog);
+      else if (contact) wrapper.insertBefore(item, contact);
+      else wrapper.appendChild(item);
+    });
+  }
+
   function applyNavBridge() {
     ensureCompactDesktopStyle();
     addDesktopLink();
+    addDesktopEducationLink();
     addMobileLink();
+    addMobileEducationLink();
   }
 
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', applyNavBridge);

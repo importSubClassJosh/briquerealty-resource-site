@@ -496,6 +496,7 @@ const downloads = [
 const mainPages = [
   "/",
   "/start-here/",
+  "/education/",
   "/resource-center/",
   "/articles/",
   "/downloads/",
@@ -662,7 +663,7 @@ function downloadCard(item) {
   });
 }
 
-function pageLayout({ title, description, slug, body, image = "", type = "website", schema = "" }) {
+function pageLayout({ title, description, slug, body, image = "", type = "website", schema = "", scripts = [] }) {
   const canonical = absoluteUrl(slug);
   const pageTitle = slug === "/" ? `${siteName} | ${siteTagline}` : `${title} | ${siteName}`;
   const socialImage = image ? `${siteUrl}/assets/images/${image}` : `${siteUrl}/assets/images/home-hero.png`;
@@ -684,6 +685,7 @@ function pageLayout({ title, description, slug, body, image = "", type = "websit
   <link rel="stylesheet" href="/assets/css/styles.css">
   <script type="application/ld+json">${JSON.stringify(baseSchema(slug))}</script>
   ${schema ? `<script type="application/ld+json">${schema}</script>` : ""}
+  ${scripts.map((src) => `<script src="${src}" defer></script>`).join("\n  ")}
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -695,6 +697,7 @@ function pageLayout({ title, description, slug, body, image = "", type = "websit
     <nav class="main-nav" aria-label="Main navigation">
       <a href="/">Home</a>
       <a href="/start-here/">Start Here</a>
+      <a href="/education/">Education</a>
       <a href="/resource-center/">Resource Center</a>
       <a href="/articles/">Blog / Articles</a>
       <a href="/about/">About</a>
@@ -713,6 +716,7 @@ function pageLayout({ title, description, slug, body, image = "", type = "websit
       <a href="/privacy-policy/">Privacy Policy</a>
       <a href="/editorial-policy/">Editorial Policy</a>
       <a href="/real-estate-disclaimer/">Real Estate Disclaimer</a>
+      <a href="/education/">Education</a>
       <a href="${author.slug}">${author.name}</a>
       <a href="/downloads/">Checklists & Downloads</a>
     </nav>
@@ -762,6 +766,32 @@ function articleSchema(item) {
   });
 }
 
+function educationSchema() {
+  return JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "Course",
+    name: "National Real Estate License Exam Prep",
+    description:
+      "Original national real estate license exam-style practice questions organized by section, with explanations and memory tricks.",
+    provider: {
+      "@type": "Organization",
+      name: siteName,
+      sameAs: siteUrl
+    },
+    educationalLevel: "Professional licensing exam preparation",
+    teaches:
+      "Property ownership, land use controls, valuation, financing, agency, disclosures, contracts, leasing, transfer of title, real estate practice, fair housing, and real estate calculations",
+    inLanguage: "en-US",
+    isAccessibleForFree: true,
+    offers: {
+      "@type": "Offer",
+      price: "19.00",
+      priceCurrency: "USD",
+      availability: "https://schema.org/PreOrder"
+    }
+  });
+}
+
 function hero({ eyebrow, title, text, image, actions = [] }) {
   return `<section class="hero">
     <div class="hero-copy">
@@ -792,6 +822,7 @@ function renderHome() {
     </div>
     <div class="card-grid four">
       ${linkCard({ href: "/start-here/#new-georgia-agent", title: "New Georgia agents", text: "First-client readiness, brokerage questions, advertising basics, and transaction checklists.", meta: "Agent path" })}
+      ${linkCard({ href: "/education/", title: "License exam prep", text: "National exam-style practice by section, with 25 free questions per section and locked mixed exams.", meta: "Education" })}
       ${linkCard({ href: "/start-here/#experienced-agent", title: "Experienced agents", text: "Brokerage models, branding, referrals, vendor systems, and productive independence.", meta: "Agent path" })}
       ${linkCard({ href: "/start-here/#referrals-rentals", title: "Referrals and rentals", text: "Referral commission questions, rental workflows, and relationship-based business building.", meta: "Flexible business" })}
       ${linkCard({ href: "/start-here/#buyers-sellers-investors", title: "Buyers, sellers, investors", text: "Education for listing prep, buyer process, short-term rentals, and long-term wealth planning.", meta: "Public education" })}
@@ -813,6 +844,98 @@ function renderHome() {
   </section>
   <section class="content-band">${resourceAuthorNote()}</section>`;
   return pageLayout({ title: siteName, description: siteTagline, slug: "/", image: "home-hero.png", body });
+}
+
+function renderEducation() {
+  const body = `${hero({
+    eyebrow: "National real estate exam prep",
+    title: "Real Estate License Exam Prep",
+    text:
+      "Practice national real estate salesperson exam topics by section for free, then unlock mixed practice, timed mock exams, saved progress, missed-question review, and full mnemonic cram sheets for $19.",
+    image: "resource-center-banner.png",
+    actions: [
+      { href: "#practice", label: "Start Free Practice" },
+      { href: "#full-exam-prep", label: "Unlock Full Prep - $19", secondary: true }
+    ]
+  })}
+  <section class="education-intro content-band" aria-label="Exam prep overview">
+    <div class="education-intro-grid">
+      <article>
+        <p class="eyebrow">Free by section</p>
+        <h2>Choose exactly what you want to drill.</h2>
+        <p>Each national topic section includes 25 free original exam-style questions with answer feedback, plain-English explanations, and memory tricks. Mixed practice and timed exams are locked because that is the closest simulation of the real test.</p>
+      </article>
+      <article>
+        <p class="eyebrow">AdSense-ready layout</p>
+        <h2>Useful public content first.</h2>
+        <p>Public study notes, section explanations, and reserved ad placements sit away from quiz buttons and account/payment prompts. The paid tier stays simple: one $19 unlock for the serious prep tools.</p>
+      </article>
+    </div>
+    <aside class="ad-slot" aria-label="Reserved advertising placement">
+      <span>AdSense placement reserved</span>
+      <small>Ads should appear between study blocks, not inside answer choices or checkout prompts.</small>
+    </aside>
+  </section>
+  <section id="practice" class="education-shell" data-education-app>
+    <noscript>
+      <div class="education-panel">
+        <h2>JavaScript is required for interactive practice.</h2>
+        <p>Enable JavaScript to choose sections, answer questions, and see explanations.</p>
+      </div>
+    </noscript>
+  </section>
+  <section id="full-exam-prep" class="content-band tinted">
+    <div class="section-heading">
+      <p class="eyebrow">Simple pricing</p>
+      <h2>Free Sections First. Full Prep When You Are Ready.</h2>
+    </div>
+    <div class="pricing-grid">
+      <article class="pricing-card">
+        <p class="eyebrow">Free</p>
+        <h3>Section Practice</h3>
+        <p class="price">$0</p>
+        <ul>
+          <li>25 questions in every national topic section</li>
+          <li>Correct-answer explanations</li>
+          <li>Wrong-answer feedback</li>
+          <li>Selected memory tricks while practicing</li>
+        </ul>
+      </article>
+      <article class="pricing-card featured">
+        <p class="eyebrow">One-time unlock</p>
+        <h3>Full Exam Prep</h3>
+        <p class="price">$19</p>
+        <ul>
+          <li>Mixed practice across all sections</li>
+          <li>Timed mock exam mode</li>
+          <li>Account-based progress saving</li>
+          <li>Missed-question review</li>
+          <li>Weak-area dashboard</li>
+          <li>Full mnemonic cram sheet</li>
+        </ul>
+        <a class="button" href="#practice">Unlock Full Exam Prep - $19</a>
+      </article>
+    </div>
+  </section>
+  <section class="content-band">
+    <div class="education-note">
+      <p class="eyebrow">Current outline alignment</p>
+      <h2>Built Around Published National Exam Topics</h2>
+      <p>This prep page uses original questions written to match national real estate salesperson exam topics and common multiple-choice patterns. It does not claim to contain actual protected exam questions, and candidates should verify the latest candidate bulletin for their state before scheduling an exam.</p>
+      <p>Reference: <a href="https://test-takers.psiexams.com/api/content/bulletin/1001" rel="nofollow">PSI Candidate Information Bulletin</a>.</p>
+    </div>
+    ${disclaimerBlock()}
+  </section>`;
+  return pageLayout({
+    title: "Real Estate License Exam Prep",
+    description:
+      "National real estate license exam prep with free section practice, answer explanations, memory tricks, and a $19 full exam prep unlock.",
+    slug: "/education/",
+    image: "resource-center-banner.png",
+    schema: educationSchema(),
+    scripts: ["/assets/js/education-quiz.js"],
+    body
+  });
 }
 
 function renderStartHere() {
@@ -1157,6 +1280,7 @@ async function removeGeneratedDirectories() {
     "start-here",
     "resource-center",
     "articles",
+    "education",
     "downloads",
     "about",
     "contact",
@@ -1211,6 +1335,7 @@ async function build() {
   await removeGeneratedDirectories();
   await writeFile(slugToPath("/"), renderHome());
   await writeFile(slugToPath("/start-here/"), renderStartHere());
+  await writeFile(slugToPath("/education/"), renderEducation());
   await writeFile(slugToPath("/resource-center/"), renderResourceCenter());
   await writeFile(slugToPath("/articles/"), renderArticlesIndex());
   await writeFile(slugToPath("/downloads/"), renderDownloadsIndex());

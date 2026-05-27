@@ -32,6 +32,7 @@ const articleSlugs = [
 
 const pageSlugs = [
   { slug: "start-here", type: "page" },
+  { slug: "education", type: "page" },
   { slug: "resource-center", type: "page" },
   { slug: "articles", type: "page" },
   { slug: "downloads", type: "page" },
