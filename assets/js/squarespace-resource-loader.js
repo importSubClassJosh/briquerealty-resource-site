@@ -1,5 +1,5 @@
 (function () {
-  var LOADER_VERSION = '2026-05-27-education-polish';
+  var LOADER_VERSION = '2026-05-27-education-nav-rail';
   if (window.brqSquarespaceResourceLoaderVersion === LOADER_VERSION) return;
   window.brqSquarespaceResourceLoaderVersion = LOADER_VERSION;
   window.brqSquarespaceResourceLoaderActive = true;
@@ -156,6 +156,7 @@
       '.brq-resource-root .site-disclaimer a,.brq-resource-root footer a{color:#f1d58d;}',
       '.brq-resource-nav{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-top:44px;padding:14px 24px;background:#fffdf8;border-bottom:1px solid rgba(91,23,36,.16);}',
       '.brq-resource-nav a{font-size:.9rem;font-weight:700;color:#5b1724;text-decoration:none;border:1px solid rgba(91,23,36,.18);border-radius:6px;padding:7px 10px;background:#fbf7ef;}',
+      '@media (max-width:600px){.brq-resource-nav{flex-wrap:nowrap;gap:6px;overflow-x:auto;overscroll-behavior-x:contain;-webkit-overflow-scrolling:touch;scrollbar-width:none;margin-top:0;padding:8px 12px;}.brq-resource-nav::-webkit-scrollbar{display:none;}.brq-resource-nav a{flex:0 0 auto;font-size:.78rem;line-height:1;padding:7px 9px;}}',
       '.brq-resource-root table{width:100%;border-collapse:collapse;margin:18px 0;background:#fffdf8;}',
       '.brq-resource-root th,.brq-resource-root td{border:1px solid rgba(91,23,36,.18);padding:10px;text-align:left;vertical-align:top;}',
       '.brq-resource-status{max-width:900px;margin:40px auto;padding:22px;border:1px solid #b68a35;background:#fffdf8;color:#252525;}',
@@ -259,9 +260,6 @@
       '<a href="/articles/">Blog / Articles</a>' +
       '<a href="/about/">About</a>' +
       '<a href="/contact/">Contact</a>' +
-      '<a href="/privacy-policy/">Privacy Policy</a>' +
-      '<a href="/editorial-policy/">Editorial Policy</a>' +
-      '<a href="/real-estate-disclaimer/">Real Estate Disclaimer</a>' +
     '</nav>';
   }
 
