@@ -851,7 +851,7 @@ function renderEducation() {
     eyebrow: "National real estate exam prep",
     title: "Real Estate License Exam Prep",
     text:
-      "Practice national real estate salesperson exam topics by section for free, then unlock mixed practice, timed mock exams, saved progress, missed-question review, and full mnemonic cram sheets for $19.",
+      "Practice national real estate salesperson exam topics by section for free, then unlock mixed practice, timed mock exams, browser progress saving, missed-question review, and full mnemonic cram sheets for $19.",
     image: "resource-center-banner.png",
     actions: [
       { href: "#practice", label: "Start Free Practice" },
@@ -908,7 +908,7 @@ function renderEducation() {
         <ul>
           <li>Mixed practice across all sections</li>
           <li>Timed mock exam mode</li>
-          <li>Account-based progress saving</li>
+          <li>Progress saving in this browser</li>
           <li>Missed-question review</li>
           <li>Weak-area dashboard</li>
           <li>Full mnemonic cram sheet</li>

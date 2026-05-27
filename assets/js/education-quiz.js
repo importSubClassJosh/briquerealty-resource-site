@@ -5,6 +5,15 @@
   var PENDING_EMAIL_KEY = "brqEducationPendingAccount";
   var CHECKOUT_URL = "https://buy.stripe.com/28EaEW62x1Hf6kq8pWbjW05";
 
+  function checkoutUrl(email) {
+    var url = new URL(CHECKOUT_URL);
+    if (email) url.searchParams.set("prefilled_email", email);
+    url.searchParams.set("utm_source", "briquerealty");
+    url.searchParams.set("utm_medium", "education_page");
+    url.searchParams.set("utm_campaign", "national_exam_prep");
+    return url.href;
+  }
+
   function q(prompt, correct, wrong, explanation, memory) {
     return {
       prompt: prompt,
@@ -584,7 +593,7 @@
     root.innerHTML = [
       '<div class="education-app">',
       '<div class="education-topbar">',
-      '<div><p class="eyebrow">Practice dashboard</p><h2>Pick a national exam section.</h2><p>Every section has 25 free questions. Mixed practice, mock exams, saved progress, missed-question review, and the full mnemonic cram sheet are part of the $19 unlock.</p></div>',
+      '<div><p class="eyebrow">Practice dashboard</p><h2>Pick a national exam section.</h2><p>Every section has 25 free questions. Mixed practice, mock exams, browser progress saving, missed-question review, and the full mnemonic cram sheet are part of the $19 unlock.</p></div>',
       '<div class="education-actions">',
       '<button class="button" data-action="' + (unlocked ? "mixed-practice" : "paywall") + '">Mixed Practice</button>',
       '<button class="button secondary" data-action="' + (unlocked ? "mock-exam" : "paywall") + '">Mock Exam</button>',
@@ -817,7 +826,7 @@
   function renderPaywall(root) {
     root.insertAdjacentHTML(
       "beforeend",
-      '<div class="education-modal" role="dialog" aria-modal="true" aria-label="Unlock Full Exam Prep"><div class="education-modal-card"><button class="modal-close" data-action="close-paywall" aria-label="Close">Close</button><p class="eyebrow">Full Exam Prep</p><h2>Unlock the real test simulation.</h2><p>You have free section practice. The $19 unlock is for the tools candidates care about most when they are close to test day: mixed practice, timed mock exams, saved progress, missed-question review, weak-area scoring, and the full mnemonic cram sheet.</p><form class="unlock-form" data-unlock-form><label>Email for account setup<input name="email" type="email" autocomplete="email" required placeholder="you@example.com"></label><button class="button" type="submit">Continue to $19 Unlock</button></form><p class="fine-print">Secure checkout and account setup will open here when enrollment is available.</p></div></div>'
+      '<div class="education-modal" role="dialog" aria-modal="true" aria-label="Unlock Full Exam Prep"><div class="education-modal-card"><button class="modal-close" data-action="close-paywall" aria-label="Close">Close</button><p class="eyebrow">Full Exam Prep</p><h2>Unlock the real test simulation.</h2><p>You have free section practice. The $19 unlock is for the tools candidates care about most when they are close to test day: mixed practice, timed mock exams, progress saving in this browser, missed-question review, weak-area scoring, and the full mnemonic cram sheet.</p><form class="unlock-form" data-unlock-form><label>Email for checkout<input name="email" type="email" autocomplete="email" required placeholder="you@example.com"></label><button class="button" type="submit">Continue to $19 Unlock</button></form><p class="fine-print">Secure Stripe checkout opens after you enter your email. Progress saving is browser-based for this launch version.</p></div></div>'
     );
   }
 
@@ -897,17 +906,17 @@
     var form = event.target.closest("[data-unlock-form]");
     if (!form) return;
     event.preventDefault();
-    var email = form.elements.email.value;
+    var email = form.elements.email.value.trim();
     try {
       localStorage.setItem(PENDING_EMAIL_KEY, email);
     } catch (error) {
       return;
     }
     if (CHECKOUT_URL) {
-      window.location.href = CHECKOUT_URL;
+      window.location.href = checkoutUrl(email);
       return;
     }
-    form.innerHTML = '<div class="unlock-confirm"><h3>Account email saved in this browser.</h3><p>The secure checkout will open here when the $19 full prep unlock is connected.</p></div>';
+    form.innerHTML = '<div class="unlock-confirm"><h3>Email saved in this browser.</h3><p>Checkout is temporarily unavailable. Try again in a few minutes.</p></div>';
   }
 
   function initOne(root) {
