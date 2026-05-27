@@ -1,5 +1,5 @@
 (function () {
-  var NAV_BRIDGE_VERSION = '2026-05-27-education';
+  var NAV_BRIDGE_VERSION = '2026-05-27-education-nav';
   if (window.brqResourceNavBridgeVersion === NAV_BRIDGE_VERSION) return;
   window.brqResourceNavBridgeVersion = NAV_BRIDGE_VERSION;
   window.brqResourceNavBridgeLoaded = true;

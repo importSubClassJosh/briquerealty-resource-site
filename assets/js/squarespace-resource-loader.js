@@ -1,5 +1,5 @@
 (function () {
-  var LOADER_VERSION = '2026-05-27-education';
+  var LOADER_VERSION = '2026-05-27-education-alias';
   if (window.brqSquarespaceResourceLoaderVersion === LOADER_VERSION) return;
   window.brqSquarespaceResourceLoaderVersion = LOADER_VERSION;
   window.brqSquarespaceResourceLoaderActive = true;
@@ -8,6 +8,8 @@
   var ROUTES = {
     '/start-here/': '/start-here/',
     '/education/': '/education/',
+    // Squarespace currently redirects /education to this legacy typo slug.
+    '/liturature/': '/education/',
     '/resource-center/': '/resource-center/',
     '/articles/': '/articles/',
     '/downloads/': '/downloads/',
@@ -71,6 +73,12 @@
   var path = normalizedPath();
   var sourcePath = ROUTES[path];
   if (!sourcePath) return;
+
+  function normalizeVisibleEducationUrl() {
+    if (path !== '/liturature/' || sourcePath !== '/education/' || !window.history || !window.history.replaceState) return;
+    var nextUrl = '/education/' + (window.location.search || '') + (window.location.hash || '');
+    window.history.replaceState({ brqEducationAlias: true }, '', nextUrl);
+  }
 
   function ensureStyle() {
     var existing = document.getElementById('brq-resource-loader-style');
@@ -217,7 +225,8 @@
     page.innerHTML = '';
     page.appendChild(root);
     updateMeta(content);
-    if (path === '/education/') ensureEducationQuizScript();
+    normalizeVisibleEducationUrl();
+    if (sourcePath === '/education/') ensureEducationQuizScript();
   }
 
   function ensureEducationQuizScript() {
