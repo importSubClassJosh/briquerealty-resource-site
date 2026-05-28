@@ -1,5 +1,5 @@
 (function () {
-  var NAV_BRIDGE_VERSION = '2026-05-27-native-education-nav';
+  var NAV_BRIDGE_VERSION = '2026-05-28-domain-polish';
   if (window.brqResourceNavBridgeVersion === NAV_BRIDGE_VERSION) return;
   window.brqResourceNavBridgeVersion = NAV_BRIDGE_VERSION;
   window.brqResourceNavBridgeLoaded = true;
@@ -70,9 +70,9 @@
     var style = document.createElement('style');
     style.id = 'brq-resource-nav-bridge-style';
     style.textContent = [
-      '@media (min-width:900px) and (max-width:1280px){',
+      '@media (min-width:900px) and (max-width:1500px){',
       '.header-display-desktop .header-nav-list{white-space:nowrap!important;}',
-      '.header-display-desktop .header-nav-item{margin-right:3px!important;}',
+      '.header-display-desktop .header-nav-item{margin-right:2px!important;}',
       '.header-display-desktop .header-nav-list a,.header-display-desktop .header-nav-folder-title{font-size:12px!important;letter-spacing:0!important;white-space:nowrap!important;}',
       '}'
     ].join('');

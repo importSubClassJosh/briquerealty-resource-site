@@ -581,6 +581,7 @@ figcaption {
 
 .education-hero-inner {
   width: min(920px, 100%);
+  min-width: 0;
   animation: fade-rise 420ms ease both;
 }
 
@@ -1361,16 +1362,21 @@ figcaption {
   }
 
   .education-hero h1 {
-    font-size: clamp(2.35rem, 11vw, 3.35rem);
+    font-size: clamp(2rem, 8.8vw, 2.45rem);
+  }
+
+  .education-hero-actions {
+    display: grid;
+    grid-template-columns: 1fr;
   }
 
   .education-hero-actions .button {
-    width: auto;
-    flex: 1 1 150px;
+    width: 100%;
+    flex: none;
   }
 
   .education-hero-metrics {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-columns: 1fr;
     gap: 0.5rem;
   }
 
