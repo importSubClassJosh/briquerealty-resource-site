@@ -1,5 +1,5 @@
 (function () {
-  var LOADER_VERSION = '2026-05-27-education-nav-rail';
+  var LOADER_VERSION = '2026-05-28-domain-polish';
   if (window.brqSquarespaceResourceLoaderVersion === LOADER_VERSION) return;
   window.brqSquarespaceResourceLoaderVersion = LOADER_VERSION;
   window.brqSquarespaceResourceLoaderActive = true;
@@ -93,6 +93,7 @@
       '.brq-resource-root a{color:#5b1724;text-decoration-thickness:1px;text-underline-offset:3px;}',
       '.brq-resource-root img{max-width:100%;height:auto;display:block;}',
       '.brq-resource-root .hero,.brq-resource-root .article-hero{display:grid;grid-template-columns:minmax(0,1fr) minmax(280px,520px);gap:34px;align-items:center;padding:56px max(24px,6vw);background:#2a2523;color:#fbf7ef;}',
+      '.brq-resource-root .hero>*,.brq-resource-root .article-header>*,.brq-resource-root .content-band,.brq-resource-root .resource-section,.brq-resource-root .download-body{animation:brq-fade-rise .32s ease both;}',
       '.brq-resource-root .hero h1,.brq-resource-root .article-hero h1{font-family:"Bricolage Grotesque",Poppins,Arial,sans-serif;font-size:clamp(2rem,4vw,4.25rem);line-height:1.05;margin:0 0 18px;}',
       '.brq-resource-root .hero p,.brq-resource-root .article-hero p{font-size:1.05rem;max-width:760px;}',
       '.brq-resource-root .article-header{background:#2a2523;color:#fbf7ef;padding:46px 0 0;}',
@@ -125,7 +126,8 @@
       '.brq-resource-root p,.brq-resource-root li{font-size:1rem;}',
       '.brq-resource-root ul,.brq-resource-root ol{padding-left:1.25rem;}',
       '.brq-resource-root .card-grid,.brq-resource-root .resource-grid,.brq-resource-root .category-grid,.brq-resource-root .related-grid,.brq-resource-root .download-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:18px;margin-top:18px;}',
-      '.brq-resource-root .card,.brq-resource-root .resource-card,.brq-resource-root .category-card,.brq-resource-root .related-card,.brq-resource-root .checklist-card,.brq-resource-root .path-section{border:1px solid rgba(91,23,36,.18);border-radius:8px;background:#fffdf8;padding:20px;box-shadow:0 8px 24px rgba(37,37,37,.06);}',
+      '.brq-resource-root .card,.brq-resource-root .resource-card,.brq-resource-root .category-card,.brq-resource-root .related-card,.brq-resource-root .checklist-card,.brq-resource-root .path-section{border:1px solid rgba(91,23,36,.18);border-radius:8px;background:#fffdf8;padding:20px;box-shadow:0 8px 24px rgba(37,37,37,.06);transition:transform .18s ease,box-shadow .18s ease,border-color .18s ease;}',
+      '.brq-resource-root a.card:hover,.brq-resource-root a.resource-card:hover,.brq-resource-root a.category-card:hover,.brq-resource-root a.related-card:hover,.brq-resource-root a.checklist-card:hover{border-color:rgba(182,138,53,.62);box-shadow:0 16px 34px rgba(37,37,37,.11);transform:translateY(-3px);}',
       '.brq-resource-root .education-shell{padding:42px 24px;background:linear-gradient(135deg,rgba(91,23,36,.08),rgba(94,109,99,.12)),#fbf7ef;}',
       '.brq-resource-root .education-app{max-width:1180px;margin:0 auto;padding:clamp(16px,2.4vw,26px);border:1px solid rgba(91,23,36,.16);border-radius:8px;background:linear-gradient(180deg,rgba(255,253,248,.98),rgba(250,246,237,.98)),#fffdf8;box-shadow:0 20px 54px rgba(37,37,37,.12);animation:brq-fade-rise .26s ease both;}',
       '.brq-resource-root .education-topbar,.brq-resource-root .quiz-header,.brq-resource-root .education-card-footer,.brq-resource-root .quiz-nav,.brq-resource-root .result-actions,.brq-resource-root .access-actions{display:flex;flex-wrap:wrap;gap:16px;align-items:center;justify-content:space-between;}',
@@ -154,9 +156,6 @@
       '.brq-resource-root .author-box img{width:86px;height:86px;object-fit:cover;border-radius:8px;}',
       '.brq-resource-root .site-disclaimer,.brq-resource-root footer{background:#2a2523;color:#fbf7ef;padding:28px 24px;}',
       '.brq-resource-root .site-disclaimer a,.brq-resource-root footer a{color:#f1d58d;}',
-      '.brq-resource-nav{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-top:44px;padding:14px 24px;background:#fffdf8;border-bottom:1px solid rgba(91,23,36,.16);}',
-      '.brq-resource-nav a{font-size:.9rem;font-weight:700;color:#5b1724;text-decoration:none;border:1px solid rgba(91,23,36,.18);border-radius:6px;padding:7px 10px;background:#fbf7ef;}',
-      '@media (max-width:600px){.brq-resource-nav{flex-wrap:nowrap;gap:6px;overflow-x:auto;overscroll-behavior-x:contain;-webkit-overflow-scrolling:touch;scrollbar-width:none;margin-top:0;padding:8px 12px;}.brq-resource-nav::-webkit-scrollbar{display:none;}.brq-resource-nav a{flex:0 0 auto;font-size:.78rem;line-height:1;padding:7px 9px;}}',
       '.brq-resource-root table{width:100%;border-collapse:collapse;margin:18px 0;background:#fffdf8;}',
       '.brq-resource-root th,.brq-resource-root td{border:1px solid rgba(91,23,36,.18);padding:10px;text-align:left;vertical-align:top;}',
       '.brq-resource-status{max-width:900px;margin:40px auto;padding:22px;border:1px solid #b68a35;background:#fffdf8;color:#252525;}',
@@ -231,7 +230,9 @@
     var root = document.createElement('article');
     root.id = 'brq-resource-print-root';
     root.className = 'brq-resource-root';
-    root.innerHTML = resourceNav() + content.html;
+    // Squarespace owns global navigation. Injecting a second resource nav made
+    // the domain feel mismatched and created recurring header spacing issues.
+    root.innerHTML = content.html;
     page.innerHTML = '';
     page.appendChild(root);
     updateMeta(content);
@@ -249,18 +250,6 @@
     script.src = SOURCE_ORIGIN + '/assets/js/education-quiz.js?v=' + encodeURIComponent(LOADER_VERSION);
     script.defer = true;
     document.body.appendChild(script);
-  }
-
-  function resourceNav() {
-    return '<nav class="brq-resource-nav" aria-label="Real estate resource navigation">' +
-      '<a href="/">Home</a>' +
-      '<a href="/start-here/">Start Here</a>' +
-      '<a href="/education/">Education</a>' +
-      '<a href="/resource-center/">Resource Center</a>' +
-      '<a href="/articles/">Blog / Articles</a>' +
-      '<a href="/about/">About</a>' +
-      '<a href="/contact/">Contact</a>' +
-    '</nav>';
   }
 
   function showStatus(message) {
