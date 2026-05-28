@@ -1,5 +1,5 @@
 (function () {
-  var LOADER_VERSION = '2026-05-28-domain-polish';
+  var LOADER_VERSION = '2026-05-28-domain-polish-2';
   if (window.brqSquarespaceResourceLoaderVersion === LOADER_VERSION) return;
   window.brqSquarespaceResourceLoaderVersion = LOADER_VERSION;
   window.brqSquarespaceResourceLoaderActive = true;
@@ -73,6 +73,28 @@
   var path = normalizedPath();
   var sourcePath = ROUTES[path];
   if (!sourcePath) return;
+
+  function removeLegacyResourceNav() {
+    document.querySelectorAll('.brq-resource-nav').forEach(function (nav) {
+      nav.remove();
+    });
+  }
+
+  function watchLegacyResourceNav() {
+    if (window.brqResourceLegacyNavCleanupActive || !window.MutationObserver) return;
+    window.brqResourceLegacyNavCleanupActive = true;
+    var scheduled = false;
+    var observer = new MutationObserver(function () {
+      if (scheduled) return;
+      scheduled = true;
+      window.requestAnimationFrame(function () {
+        scheduled = false;
+        removeLegacyResourceNav();
+      });
+    });
+    observer.observe(document.documentElement, { childList: true, subtree: true });
+    removeLegacyResourceNav();
+  }
 
   function normalizeVisibleEducationUrl() {
     if (path !== '/liturature/' || sourcePath !== '/education/' || !window.history || !window.history.replaceState) return;
@@ -226,6 +248,7 @@
 
   function render(content) {
     ensureStyle();
+    watchLegacyResourceNav();
     var page = document.querySelector('main#page') || document.querySelector('main') || document.body;
     var root = document.createElement('article');
     root.id = 'brq-resource-print-root';
@@ -235,6 +258,7 @@
     root.innerHTML = content.html;
     page.innerHTML = '';
     page.appendChild(root);
+    removeLegacyResourceNav();
     updateMeta(content);
     normalizeVisibleEducationUrl();
     if (sourcePath === '/education/') ensureEducationQuizScript();
