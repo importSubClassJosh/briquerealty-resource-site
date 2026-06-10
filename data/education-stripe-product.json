@@ -1,11 +1,11 @@
 {
   "mode": "live",
   "updated_at": "2026-05-27T16:56:00-04:00",
-  "success_url": "https://www.briquerealty.com/education/?exam_prep=paid&session_id={CHECKOUT_SESSION_ID}",
+  "success_url": "https://www.briquerealty.com/liturature/?exam_prep=paid&session_id={CHECKOUT_SESSION_ID}",
   "product": {
-    "product_key": "national_exam_prep_full",
-    "name": "BriqueRealty Full Exam Prep - $19",
-    "description": "One-time unlock for national real estate license exam mixed practice, timed mock exams, saved progress, missed-question review, weak-area scoring, and mnemonic cram sheets.",
+    "product_key": "all_state_exam_prep_full",
+    "name": "BriqueRealty All-State Exam Prep - $19",
+    "description": "One-time unlock for all 50 states plus DC, 6x exam-size state pools, mixed national/state practice, timed 90% readiness exams, saved progress, missed-question review, and mnemonic cram sheets.",
     "price_cents": 1900,
     "currency": "usd",
     "stripe_product_id": "prod_Ub0XUmFxIUdNdC",

@@ -1,9 +1,66 @@
 const TOKEN_TTL_SECONDS = 60 * 60 * 24 * 730;
+const STATE_POOL_MULTIPLIER = 6;
+const PASS_CONFIDENCE_GOAL = 90;
+const DEFAULT_STATE_CODE = "GA";
+const DEFAULT_PAID_STATE_CONTENT_KEY = "education:state-question-blueprints:v1";
 const JSON_HEADERS = {
   "content-type": "application/json; charset=utf-8",
   "cache-control": "no-store"
 };
 const encoder = new TextEncoder();
+const STATE_PROFILES = [
+  profile("AL", "Alabama", 120, 80, 40),
+  profile("AK", "Alaska", 120, 80, 40),
+  profile("AZ", "Arizona", 190, 80, 110),
+  profile("AR", "Arkansas", 120, 80, 40),
+  profile("CA", "California", 150, 100, 50),
+  profile("CO", "Colorado", 154, 80, 74),
+  profile("CT", "Connecticut", 120, 80, 40),
+  profile("DE", "Delaware", 120, 80, 40),
+  profile("DC", "District of Columbia", 110, 80, 30),
+  profile("FL", "Florida", 100, 70, 30),
+  profile("GA", "Georgia", 152, 100, 52),
+  profile("HI", "Hawaii", 130, 80, 50),
+  profile("ID", "Idaho", 120, 80, 40),
+  profile("IL", "Illinois", 140, 100, 40),
+  profile("IN", "Indiana", 120, 80, 40),
+  profile("IA", "Iowa", 120, 80, 40),
+  profile("KS", "Kansas", 110, 80, 30),
+  profile("KY", "Kentucky", 120, 80, 40),
+  profile("LA", "Louisiana", 135, 80, 55),
+  profile("ME", "Maine", 120, 80, 40),
+  profile("MD", "Maryland", 110, 80, 30),
+  profile("MA", "Massachusetts", 120, 80, 40),
+  profile("MI", "Michigan", 115, 80, 35),
+  profile("MN", "Minnesota", 120, 80, 40),
+  profile("MS", "Mississippi", 120, 80, 40),
+  profile("MO", "Missouri", 140, 100, 40),
+  profile("MT", "Montana", 113, 80, 33),
+  profile("NE", "Nebraska", 120, 80, 40),
+  profile("NV", "Nevada", 120, 80, 40),
+  profile("NH", "New Hampshire", 120, 80, 40),
+  profile("NJ", "New Jersey", 110, 80, 30),
+  profile("NM", "New Mexico", 130, 80, 50),
+  profile("NY", "New York", 75, 55, 20),
+  profile("NC", "North Carolina", 120, 80, 40),
+  profile("ND", "North Dakota", 120, 80, 40),
+  profile("OH", "Ohio", 120, 80, 40),
+  profile("OK", "Oklahoma", 120, 80, 40),
+  profile("OR", "Oregon", 130, 80, 50),
+  profile("PA", "Pennsylvania", 120, 80, 40),
+  profile("RI", "Rhode Island", 120, 80, 40),
+  profile("SC", "South Carolina", 120, 80, 40),
+  profile("SD", "South Dakota", 120, 80, 40),
+  profile("TN", "Tennessee", 120, 80, 40),
+  profile("TX", "Texas", 110, 80, 30),
+  profile("UT", "Utah", 130, 80, 50),
+  profile("VT", "Vermont", 120, 80, 40),
+  profile("VA", "Virginia", 120, 80, 40),
+  profile("WA", "Washington", 110, 80, 30),
+  profile("WV", "West Virginia", 120, 80, 40),
+  profile("WI", "Wisconsin", 120, 80, 40),
+  profile("WY", "Wyoming", 120, 80, 40)
+];
 
 export default {
   async fetch(request, env, ctx) {
@@ -18,6 +75,7 @@ export default {
       if (request.method === "POST" && url.pathname === "/claim") return claimAccess(request, env, ctx);
       if (request.method === "POST" && url.pathname === "/restore") return restoreAccess(request, env);
       if (request.method === "POST" && url.pathname === "/verify") return verifyAccess(request, env);
+      if (request.method === "POST" && url.pathname === "/session/start") return startPaidSession(request, env);
       if (request.method === "POST" && url.pathname === "/progress/get") return getProgress(request, env);
       if (request.method === "POST" && url.pathname === "/progress/save") return saveProgress(request, env);
 
@@ -63,7 +121,7 @@ async function claimAccess(request, env, ctx) {
       email,
       emailHash,
       codeHash,
-      plan: env.PLAN_ID || "national_exam_prep_full",
+      plan: env.PLAN_ID || "all_state_exam_prep_full",
       active: true,
       createdAt: nowIso,
       updatedAt: nowIso,
@@ -140,8 +198,43 @@ async function verifyAccess(request, env) {
   });
 }
 
+async function startPaidSession(request, env) {
+  const body = await readJson(request);
+  const auth = await authenticateToken(env, body.token);
+  if (!auth.ok) return json(request, env, { ok: false, error: auth.error }, auth.status);
+
+  const mode = cleanString(body.mode).toLowerCase();
+  if (!["mixed", "state", "mock"].includes(mode)) return json(request, env, { ok: false, error: "invalid_mode" }, 400);
+
+  const profile = stateProfileFor(body.state_code || body.stateCode);
+  const content = await paidStateContent(env);
+  if (!content.ok) return json(request, env, { ok: false, error: content.error }, 503);
+
+  const stateCount = stateQuestionCountForMode(mode, profile);
+  const nationalCount = nationalQuestionCountForMode(mode, profile);
+  const stateQuestions = stateQuestionsForProfile(profile, content.blueprints, stateCount);
+  if (!stateQuestions.length) return json(request, env, { ok: false, error: "empty_question_pool" }, 503);
+
+  return json(request, env, {
+    ok: true,
+    session: {
+      type: mode,
+      stateCode: profile.code,
+      sectionId: `state-${profile.code.toLowerCase()}`,
+      name: sessionNameForMode(mode, profile),
+      timed: mode === "mock",
+      passConfidenceGoal: PASS_CONFIDENCE_GOAL,
+      nationalQuestionCount: nationalCount,
+      stateQuestionCount: stateQuestions.length,
+      totalQuestions: nationalCount + stateQuestions.length,
+      questions: stateQuestions
+    }
+  });
+}
+
 async function getProgress(request, env) {
-  const auth = await authenticatedPayload(request, env);
+  const body = await readJson(request);
+  const auth = await authenticateToken(env, body.token);
   if (!auth.ok) return json(request, env, { ok: false, error: auth.error }, auth.status);
 
   const progress = (await getJson(env.ENTITLEMENTS, `progress:${auth.payload.sub}`)) || {};
@@ -150,29 +243,109 @@ async function getProgress(request, env) {
 
 async function saveProgress(request, env) {
   const body = await readJson(request);
-  const token = cleanString(body.token);
-  const payload = await verifyAccessToken(env, token);
-  if (!payload) return json(request, env, { ok: false, error: "invalid_token" }, 401);
-
-  const entitlement = await getJson(env.ENTITLEMENTS, `entitlement:${payload.sub}`);
-  if (!entitlement || entitlement.active === false) return json(request, env, { ok: false, error: "inactive_entitlement" }, 403);
+  const auth = await authenticateToken(env, body.token);
+  if (!auth.ok) return json(request, env, { ok: false, error: auth.error }, auth.status);
 
   const progress = body.progress && typeof body.progress === "object" && !Array.isArray(body.progress) ? body.progress : {};
   const serialized = JSON.stringify(progress);
   if (serialized.length > 200000) return json(request, env, { ok: false, error: "progress_too_large" }, 413);
 
-  await env.ENTITLEMENTS.put(`progress:${payload.sub}`, serialized);
+  await env.ENTITLEMENTS.put(`progress:${auth.payload.sub}`, serialized);
   return json(request, env, { ok: true, saved: true, saved_at: new Date().toISOString() });
 }
 
-async function authenticatedPayload(request, env) {
-  const body = await readJson(request);
-  const token = cleanString(body.token);
+async function authenticateToken(env, tokenValue) {
+  const token = cleanString(tokenValue);
   const payload = await verifyAccessToken(env, token);
   if (!payload) return { ok: false, status: 401, error: "invalid_token" };
   const entitlement = await getJson(env.ENTITLEMENTS, `entitlement:${payload.sub}`);
   if (!entitlement || entitlement.active === false) return { ok: false, status: 403, error: "inactive_entitlement" };
   return { ok: true, payload, entitlement };
+}
+
+async function paidStateContent(env) {
+  const key = cleanString(env.PAID_STATE_CONTENT_KEY) || DEFAULT_PAID_STATE_CONTENT_KEY;
+  const content = await getJson(env.ENTITLEMENTS, key);
+  if (!content || !Array.isArray(content.blueprints) || !content.blueprints.length) {
+    return { ok: false, error: "paid_content_unavailable" };
+  }
+  return { ok: true, blueprints: content.blueprints };
+}
+
+function profile(code, name, examQuestions, nationalQuestions, stateQuestions) {
+  return { code, name, examQuestions, nationalQuestions, stateQuestions };
+}
+
+function stateProfileFor(code) {
+  const normalized = cleanString(code).toUpperCase();
+  return STATE_PROFILES.find((item) => item.code === normalized) || STATE_PROFILES.find((item) => item.code === DEFAULT_STATE_CODE);
+}
+
+function statePoolTarget(profile) {
+  return profile.examQuestions * STATE_POOL_MULTIPLIER;
+}
+
+function stateQuestionCountForMode(mode, profile) {
+  if (mode === "mock") return profile.stateQuestions;
+  if (mode === "mixed") return Math.min(25, statePoolTarget(profile));
+  return Math.min(50, statePoolTarget(profile));
+}
+
+function nationalQuestionCountForMode(mode, profile) {
+  if (mode === "mock") return profile.nationalQuestions;
+  if (mode === "mixed") return 25;
+  return 0;
+}
+
+function sessionNameForMode(mode, profile) {
+  if (mode === "mock") return `${profile.name} 90% Readiness Exam`;
+  if (mode === "mixed") return `${profile.name} Mixed Practice`;
+  return `${profile.name} State Law Drill`;
+}
+
+function stateQuestionsForProfile(profile, blueprints, count) {
+  const target = statePoolTarget(profile);
+  const pool = Array.from({ length: target }, (_, index) => {
+    const blueprint = blueprints[index % blueprints.length];
+    const cycle = Math.floor(index / blueprints.length) + 1;
+    return {
+      sectionName: `${profile.name} State Law`,
+      sourceSectionId: `state-${profile.code.toLowerCase()}`,
+      stateCode: profile.code,
+      topic: cleanString(blueprint.topic),
+      prompt: `${profile.name} state law drill ${index + 1} - ${cleanString(blueprint.topic)}: ${fillTemplate(blueprint.prompt, profile, cycle, index)}`,
+      correct: fillTemplate(blueprint.correct, profile, cycle, index),
+      wrong: Array.isArray(blueprint.wrong) ? blueprint.wrong.map(cleanString).filter(Boolean) : [],
+      explanation: fillTemplate(blueprint.explanation, profile, cycle, index),
+      memory: cleanString(blueprint.memory)
+    };
+  });
+  return shuffled(pool).slice(0, count);
+}
+
+function fillTemplate(value, profile, cycle, index) {
+  return cleanString(value)
+    .split("{state}")
+    .join(profile.name)
+    .split("{cycle}")
+    .join(String(cycle))
+    .split("{number}")
+    .join(String(index + 1));
+}
+
+function shuffled(items) {
+  const copy = items.slice();
+  for (let index = copy.length - 1; index > 0; index -= 1) {
+    const swapIndex = cryptoRandomInt(index + 1);
+    [copy[index], copy[swapIndex]] = [copy[swapIndex], copy[index]];
+  }
+  return copy;
+}
+
+function cryptoRandomInt(max) {
+  const bytes = new Uint32Array(1);
+  crypto.getRandomValues(bytes);
+  return bytes[0] % max;
 }
 
 function validatePaidSession(session, lineItems, env) {
@@ -222,7 +395,7 @@ async function createAccessToken(env, entitlement, sessionId) {
     aud: "briquerealty-education",
     sub: entitlement.emailHash,
     email: entitlement.email,
-    plan: entitlement.plan || env.PLAN_ID || "national_exam_prep_full",
+    plan: entitlement.plan || env.PLAN_ID || "all_state_exam_prep_full",
     session_id: sessionId,
     iat: now,
     exp: now + TOKEN_TTL_SECONDS

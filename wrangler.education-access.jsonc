@@ -12,11 +12,12 @@
 	},
 	"vars": {
 		"ENVIRONMENT": "production",
-		"PLAN_ID": "national_exam_prep_full",
+		"PLAN_ID": "all_state_exam_prep_full",
 		"EXPECTED_AMOUNT_CENTS": "1900",
 		"EXPECTED_CURRENCY": "usd",
 		"PRICE_ID": "price_1TboWKBnkZpGl02mv2Ik1oH0",
 		"PAYMENT_LINK_ID": "plink_1TboWKBnkZpGl02moQQOQ8Ir",
+		"PAID_STATE_CONTENT_KEY": "education:state-question-blueprints:v1",
 		"ALLOWED_ORIGINS": "https://www.briquerealty.com,https://briquerealty.com,https://importsubclassjosh.github.io,http://localhost:4173,http://127.0.0.1:4173"
 	},
 	"kv_namespaces": [
